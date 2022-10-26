@@ -1,12 +1,12 @@
 <script lang="ts">
     import type { T_EuiIcon } from "./T_EuiIcon";
-    import type { EuiSize } from "./T_EuiSize";
+    import type { T_EuiSize } from "./T_EuiSize.d";
 
 
     export let icon: T_EuiIcon;
     export let set: string="eui";
     export let fillcolor: string = "grey-100";
-    export let size: EuiSize = "m";
+    export let size: T_EuiSize = "m";
 </script>
 
 <eui-icon-svg
