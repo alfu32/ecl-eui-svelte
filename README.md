@@ -52,10 +52,10 @@ export default writable(0)
 
 |Component|status|
 | --- | --- |
-| EuiAlert | done |
+| EuiAlert | done :zap: |
 | EuiAutocomplete | todo |
-| EuiBadge | todo |
-| EuiBlockContent | todo |
+| EuiBadge | done :zap: |
+| EuiBlockContent | done :zap: |
 | EuiBlockDocument | todo |
 | EuiButton | todo |
 | EuiButtonGroup | todo |
@@ -76,7 +76,7 @@ export default writable(0)
 | EuiFieldset | todo |
 | EuiGrowl | todo |
 | EuiIcon | todo |
-| EuiIconSvg | done |
+| EuiIconSvg | done :zap: |
 | EuiIconToggle | todo |
 | EuiLabel | todo |
 | EuiList | todo |

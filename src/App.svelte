@@ -4,7 +4,9 @@
     import type { T_EuiIcon } from './lib/T_EuiIcon';
     import EuiIconSvg from './lib/EuiIconSvg.svelte';
     import EuiBadge from './lib/EuiBadge.svelte';
+    import EuiBlockContent from './lib/EuiBlockContent.svelte';
   let dynamicIcon:T_EuiIcon="eui-settings"
+  let contentIsBlocked:boolean=false;
 </script>
 
 <main>
@@ -100,7 +102,17 @@
             <EuiBadge size="2xl">999</EuiBadge>
             <EuiBadge size="2xl">Badge label</EuiBadge>
         </div>
+      </div>
     </div>
+  </details>
+  <details>
+    <summary><strong>EuiContentBlock</strong></summary>
+    <hr>
+    <div>
+      <EuiBlockContent isBlocked={contentIsBlocked}>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </EuiBlockContent>
+      <button on:click={e => contentIsBlocked=!contentIsBlocked}>{contentIsBlocked?"unblock":"block"}</button>
     </div>
   </details>
   <details>
