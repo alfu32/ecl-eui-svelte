@@ -1,0 +1,1 @@
+export type T_EuiAlertKind="information" | "success" | "secondary" | "warning" | "danger"

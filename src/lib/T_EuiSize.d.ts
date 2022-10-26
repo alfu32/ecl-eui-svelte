@@ -1,0 +1,1 @@
+export type T_EuiSize= "s"|"m"|"l"|"xl"|"2xl"

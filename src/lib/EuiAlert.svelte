@@ -1,12 +1,21 @@
 <script lang="ts">
+    import type { T_EuiIcon } from "./T_EuiIcon";
     import EuiIconSvg from "./EuiIconSvg.svelte";
+    import type { T_EuiAlertKind } from "./T_EuiAlertKind";
+    import type { T_EuiSize } from "./T_EuiSize";
     export let euiAlertMuted: boolean = false;
-    export let euiAlertKind:
-        | null
-        | "success"
-        | "secondary"
-        | "warning"
-        | "danger" = null;
+    export let size: T_EuiSize  = "m";
+    export let kind: T_EuiAlertKind  = "information";
+    const infocatToIconIdMap:{[cat in T_EuiAlertKind]:T_EuiIcon} = {
+        "information":"ecl-information",
+        "success":"ecl-success",
+        "secondary":"old-eui-question",
+        "warning":"ecl-warning",
+        "danger":"ecl-error",
+    };
+    function getIconForInfoCategory(c:T_EuiAlertKind):T_EuiIcon{
+        return infocatToIconIdMap[c];
+    }
     export let isCloseable: boolean = false;
     let isClosed:boolean = false;
 </script>
@@ -15,15 +24,15 @@
 <eui-alert
     aria-disabled="false"
     data-e2e="eui-alert"
-    class="eui-alert{euiAlertMuted ? ' eui-alert--muted' : ''}{euiAlertKind
-        ? ` eui-alert--${euiAlertKind}`
+    class="eui-alert{euiAlertMuted ? ' eui-alert--muted' : ''}{kind
+        ? ` eui-alert--${kind}`
         : ''}"
     ><div class="eui-alert__content-wrapper">
         <div class="eui-alert__type-container">
             <EuiIconSvg
-                icon="eui-information-circle"
-                fillcolor="white"
-                size="l"
+                icon={getIconForInfoCategory(kind)}
+                fillcolor="grey-100"
+                size={size}
             />
         </div>
         <!---->
@@ -52,7 +61,7 @@
         border: 1px solid;
         display: flex;
         background-color: transparent;
-        background-position: var(--eui-base-spacing-s);
+        background-position: var(--eui-base-spacing-m);
         background-repeat: no-repeat;
         border-color: var(--eui-base-color-info-50);
         color: var(--eui-base-color-text);
@@ -65,7 +74,7 @@
         padding: var(--eui-base-spacing-xs);
     }
     .eui-alert__content {
-        padding: var(--eui-base-spacing-m);
+        padding: var(--eui-base-spacing-s);
     }
     .eui-alert__content-wrapper {
         display: flex;
