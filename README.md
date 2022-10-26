@@ -46,3 +46,64 @@ If you have state that's important to retain within a component, consider creati
 import { writable } from 'svelte/store'
 export default writable(0)
 ```
+# ecl-eui-svelte
+
+## components
+
+|Component|status|
+| --- | --- |
+| EuiAlert | done |
+| EuiAutocomplete | todo |
+| EuiBadge | todo |
+| EuiBlockContent | todo |
+| EuiBlockDocument | todo |
+| EuiButton | todo |
+| EuiButtonGroup | todo |
+| EuiCard | todo |
+| EuiChip | todo |
+| EuiChipList | todo |
+| EuiDatepicker | todo |
+| EuiDateRangeSelector | todo |
+| EuiDashboardButton | todo |
+| EuiDashboardCard | todo |
+| EuiDialog | todo |
+| EuiDisableContent | todo |
+| EuiDiscussionThread | todo |
+| EuiDropdown | todo |
+| EuiDropdownButtonMenu | todo |
+| EuiFeedbackMessage | todo |
+| EuiFileUpload | todo |
+| EuiFieldset | todo |
+| EuiGrowl | todo |
+| EuiIcon | todo |
+| EuiIconSvg | done |
+| EuiIconToggle | todo |
+| EuiLabel | todo |
+| EuiList | todo |
+| EuiMessageBox | todo |
+| EuiPaginator | todo |
+| EuiPopover | todo |
+| EuiProgressCircle | todo |
+| EuiSlideToggle | todo |
+| EuiTabs | todo |
+| EuiTable | todo |
+| EuiTimebar | todo |
+| EuiTimeline | todo |
+| EuiTimepicker | todo |
+| EuiWizard | todo |
+| EuiInputNumber | todo |
+| EuiInputCheckbox | todo |
+| EuiInputRadio | todo |
+| EuiInputText | todo |
+| EuiSelect | todo |
+| EuiTextarea | todo |
+| EuiInputGroup | todo |
+| EuiDropdownButton | todo |
+| EuiSplitButton | todo |
+| EuiTooltip | todo |
+| EuiMaxLength | todo |
+| EuiPage | todo |
+| EuiPageHeader | todo |
+| EuiPageColumns | todo |
+| EuiBreadcrumb | todo |
+| EuiSidebarMenu | todo |
