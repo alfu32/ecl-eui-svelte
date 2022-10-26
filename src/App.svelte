@@ -1,45 +1,61 @@
 <script lang="ts">
   import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+  import EuiAlert from './lib/EuiAlert.svelte'
+    import type { T_EuiIcon } from './lib/EuiIcon';
+    import EuiIconSvg from './lib/EuiIconSvg.svelte';
+  let dynamicIcon:T_EuiIcon="eui-settings"
 </script>
 
 <main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank"> 
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
+  <details>
+    <summary><strong>EuiAlert</strong></summary>
+    <hr>
+    <div>
+      <EuiAlert>this is a great info</EuiAlert>
+      <EuiAlert euiAlertKind="success">this is a great success</EuiAlert>
+      <EuiAlert euiAlertKind="warning">this is a great warning</EuiAlert>
+      <EuiAlert euiAlertKind="danger">this is a great danger</EuiAlert>
+      <EuiAlert euiAlertKind="secondary">this is a great secondary</EuiAlert>
+      <EuiAlert isCloseable={true}>this is a great closable info</EuiAlert>
+      <EuiAlert isCloseable={true} euiAlertKind="success">this is a great closable success</EuiAlert>
+      <EuiAlert isCloseable={true} euiAlertKind="warning">this is a great closable warning</EuiAlert>
+      <EuiAlert isCloseable={true} euiAlertKind="danger">this is a great closable danger</EuiAlert>
+      <EuiAlert isCloseable={true} euiAlertKind="secondary">this is a great closable secondary</EuiAlert>
+    </div>
+  </details>
+  <details>
+    <summary><strong>EuiIconSvg</strong></summary>
+    <hr>
+    <div>
+      <h6 class="section-title">No set defined : eUI set by default</h6>
 
-  <div class="card">
-    <Counter />
-  </div>
+      <EuiIconSvg icon="eui-settings"></EuiIconSvg>
 
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
 
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+      <h6 class="section-title">Set is defined as with "set" property</h6>
+
+      <EuiIconSvg icon="eui-add" set="eui"></EuiIconSvg>
+      <EuiIconSvg icon="add-outline" set="sharp"></EuiIconSvg>
+      <br>
+      <EuiIconSvg icon="add-sharp" set="outline"></EuiIconSvg>
+
+
+      <h6 class="section-title">Icon and set are defined using "icon" property</h6>
+
+      <EuiIconSvg icon="eui-warning"></EuiIconSvg>
+      <br>
+      <EuiIconSvg icon="eui-arrow-down"></EuiIconSvg>
+
+
+      <h6 class="section-title">Icon can be dynamically changed</h6>
+
+      <EuiIconSvg icon={dynamicIcon}></EuiIconSvg>
+      <br>
+      <button on:click={e => dynamicIcon=(dynamicIcon==="eui-settings")?"eui-close":"eui-settings"}>Update icon</button>
+
+    </div>
+  </details>
 </main>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  }
 </style>
