@@ -1,8 +1,8 @@
 <script lang="ts">
-    import type { T_EuiIcon } from "./T_EuiIcon";
+    import type { T_EuiIcon } from "./T_EuiIcon.d";
     import EuiIconSvg from "./EuiIconSvg.svelte";
-    import type { T_EuiBadgeKind } from "./T_EuiBadgeKind";
-    import type { T_EuiSize } from "./T_EuiSize";
+    import type { T_EuiBadgeKind } from "./T_EuiBadgeKind.d";
+    import type { T_EuiSize } from "./T_EuiSize.d";
     export let size: T_EuiSize  = "m";
     export let kind: T_EuiBadgeKind  = "primary";
     let isClosed:boolean = false;
