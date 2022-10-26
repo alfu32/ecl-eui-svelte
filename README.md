@@ -107,3 +107,5 @@ export default writable(0)
 | EuiPageColumns | todo |
 | EuiBreadcrumb | todo |
 | EuiSidebarMenu | todo |
+
+## predefined layouts
