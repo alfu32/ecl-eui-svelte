@@ -1,0 +1,20 @@
+
+// file: "src/lib/EuiTable.svelte"
+<script lang="ts">
+    import type { T_EuiButtonKind } from "./T_EuiBadgeKind";
+    import type { T_NullableProp } from "./T_NullableProp";
+
+    export let disabled: T_NullableProp = null;
+    export let outline: T_NullableProp = null;
+    export let flat: T_NullableProp = null;
+    export let kind: T_EuiButtonKind = null;
+</script>
+<div class="EuiTable">
+    <h4>EuiTable<h4>
+    <slot></slot>
+</div>
+<style>
+    .EuiTable{
+        border:1px solid #ccc;
+    }
+</style>

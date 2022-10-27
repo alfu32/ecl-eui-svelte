@@ -1,9 +1,10 @@
 <script lang="ts">
-    import type { T_EuiButtonKind } from "./T_EuiBadgeKind";
+    import type { T_EuiButtonKind } from "../lib/T_EuiBadgeKind";
+    import type { T_NullableProp } from "../lib/T_NullableProp";
 
-    export let disabled: null | true = undefined;
-    export let outline: undefined | true = undefined;
-    export let flat: undefined | true = undefined;
+    export let disabled: T_NullableProp = null;
+    export let outline: T_NullableProp = null;
+    export let flat: T_NullableProp = null;
     export let kind: T_EuiButtonKind = null;
     $: disabledClass = disabled === true ? " eui-button--disabled" : "";
     $: outlineClass = outline === true ? " eui-button--outline" : "";
