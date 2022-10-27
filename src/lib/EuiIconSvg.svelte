@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type { T_EuiIcon } from "./T_EuiIcon";
-    import type { T_EuiSize } from "./T_EuiSize.d";
+    import type { T_EuiIcon } from "../lib/T_EuiIcon";
+    import type { T_EuiSize } from "../lib/T_EuiSize";
 
 
     export let icon: T_EuiIcon;

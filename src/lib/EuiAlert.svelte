@@ -1,8 +1,8 @@
 <script lang="ts">
-    import type { T_EuiIcon } from "./T_EuiIcon.d";
+    import type { T_EuiIcon } from "./T_EuiIcon";
     import EuiIconSvg from "./EuiIconSvg.svelte";
-    import type { T_EuiAlertKind } from "./T_EuiAlertKind.d";
-    import type { T_EuiSize } from "./T_EuiSize.d";
+    import type { T_EuiAlertKind } from "./T_EuiAlertKind";
+    import type { T_EuiSize } from "./T_EuiSize";
     export let euiAlertMuted: boolean = false;
     export let size: T_EuiSize  = "m";
     export let kind: T_EuiAlertKind  = "information";
