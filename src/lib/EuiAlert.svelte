@@ -1,8 +1,8 @@
 <script lang="ts">
-    import type { T_EuiIcon } from "./T_EuiIcon";
+    import type { T_EuiIcon } from "./T_EuiIcon.d";
     import EuiIconSvg from "./EuiIconSvg.svelte";
-    import type { T_EuiAlertKind } from "./T_EuiAlertKind";
-    import type { T_EuiSize } from "./T_EuiSize";
+    import type { T_EuiAlertKind } from "./T_EuiAlertKind.d";
+    import type { T_EuiSize } from "./T_EuiSize.d";
     export let euiAlertMuted: boolean = false;
     export let size: T_EuiSize  = "m";
     export let kind: T_EuiAlertKind  = "information";
@@ -38,8 +38,10 @@
         <!---->
         <div role="alert" class="eui-alert__content"><slot /></div>
         {#if isCloseable}
+        <!-- svelte-ignore a11y-invalid-attribute -->
+        <!-- svelte-ignore a11y-missing-attribute -->
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
         <a
-            href="javascript:void(0)"
             on:click={e => isClosed=true}
             role="button"
             aria-label="Close Icon Button"

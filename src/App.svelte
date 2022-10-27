@@ -5,6 +5,7 @@
     import EuiIconSvg from './lib/EuiIconSvg.svelte';
     import EuiBadge from './lib/EuiBadge.svelte';
     import EuiBlockContent from './lib/EuiBlockContent.svelte';
+    import EuiButton from './lib/EuiButton.svelte';
   let dynamicIcon:T_EuiIcon="eui-settings"
   let contentIsBlocked:boolean=false;
 </script>
@@ -112,7 +113,7 @@
       <EuiBlockContent isBlocked={contentIsBlocked}>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     </EuiBlockContent>
-      <button on:click={e => contentIsBlocked=!contentIsBlocked}>{contentIsBlocked?"unblock":"block"}</button>
+      <EuiButton on:click={e => contentIsBlocked=!contentIsBlocked}>{contentIsBlocked?"unblock":"block"}</EuiButton>
     </div>
   </details>
   <details>
@@ -145,6 +146,50 @@
       <br>
       <button on:click={e => dynamicIcon=(dynamicIcon==="eui-settings")?"eui-close":"eui-settings"}>Update icon</button>
 
+    </div>
+  </details>
+  <details>
+    <summary><strong>EuiButton</strong></summary>
+    <hr>
+    <div>
+      <EuiButton>default</EuiButton>
+      <h6 class="section-title">Explicit variant color input</h6>
+<p>Using one of the following input option : <code>kind="primary"</code> | <code>kind="secondary"</code> | <code>kind="info"</code> | <code>kind="success"</code> | <code>kind="warning"</code> | <code>kind="danger"</code> | <code>kind="accent"</code></p>
+
+<div class="eui-u-flex eui-u-flex-wrap eui-u-mt-m">
+    <EuiButton kind="primary">primary</EuiButton>
+    <EuiButton kind="secondary">secondary</EuiButton>
+    <EuiButton kind="info">info</EuiButton>
+    <EuiButton kind="success">success</EuiButton>
+    <EuiButton kind="warning">warning</EuiButton>
+    <EuiButton kind="danger">danger</EuiButton>
+    <EuiButton kind="accent">accent</EuiButton>
+</div>
+<h6 class="section-title eui-u-mt-m">Flat styled buttons</h6>
+<p>Using the <code>flat</code> input option</p>
+
+<div class="eui-u-flex eui-u-flex-wrap eui-u-mt-m">
+  <EuiButton kind="primary" flat>flat primary</EuiButton>
+  <EuiButton kind="secondary" flat>flat secondary</EuiButton>
+  <EuiButton kind="info" flat>flat info</EuiButton>
+  <EuiButton kind="success" flat>flat success</EuiButton>
+  <EuiButton kind="warning" flat>flat warning</EuiButton>
+  <EuiButton kind="danger" flat>flat danger</EuiButton>
+  <EuiButton kind="accent" flat>flat accent</EuiButton>
+</div>
+<h6 class="section-title eui-u-mt-m">Outline styled buttons</h6>
+<p>Using the <code>outline</code> input option</p>
+
+<div class="eui-u-flex eui-u-flex-wrap eui-u-mt-m">
+  <EuiButton disabled kind="primary" outline>outline primary</EuiButton>
+  <EuiButton kind="secondary" outline>outline secondary</EuiButton>
+  <EuiButton kind="info" outline>outline info</EuiButton>
+  <EuiButton kind="success" outline>outline success</EuiButton>
+  <EuiButton kind="warning" outline>outline warning</EuiButton>
+  <EuiButton kind="danger" outline>outline danger</EuiButton>
+  <EuiButton kind="accent" outline>outline accent</EuiButton>
+  <button disabled>disabled button</button>
+</div>
     </div>
   </details>
 </main>
