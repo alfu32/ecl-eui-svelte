@@ -52,13 +52,13 @@ export default writable(0)
 
 |Component              |todo |planed |working |testing |done |
 | ---                   | --- | ---   | ---    | ---    | --- |
-| EuiAlert              | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |
+| EuiAlert              | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   |
 | EuiAutocomplete       | :black_circle: | :white_circle: | :white_circle: | :white_circle: | :white_circle: |
-| EuiBadge              | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |
-| EuiBlockContent       | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |
+| EuiBadge              | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   |
+| EuiBlockContent       | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   |
 | EuiBlockDocument      | :black_circle: | :white_circle: | :white_circle: | :white_circle: | :white_circle: |
-| EuiButton             | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |
-| EuiButtonGroup        | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |
+| EuiButton             | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   |
+| EuiButtonGroup        | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   |
 | EuiCard               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiChip               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiChipList           | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
@@ -76,7 +76,7 @@ export default writable(0)
 | EuiFieldset           | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiGrowl              | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiIcon               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
-| EuiIconSvg            | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |
+| EuiIconSvg            | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   |
 | EuiIconToggle         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiLabel              | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiList               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
