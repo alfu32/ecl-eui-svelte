@@ -60,9 +60,9 @@ export default writable(0)
 | EuiButton             | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
 | EuiButtonGroup        | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
 | EuiInputButtonGroup   | :black_circle: | :red_circle:   | :white_circle: | :white_circle: | :white_circle: |
-| EuiCard               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
-| EuiChip               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
-| EuiChipList           | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiCard               | :black_circle: | :red_circle:   | :white_circle: | :white_circle: | :white_circle: |
+| EuiChip               | :black_circle: | :red_circle:   | :white_circle: | :white_circle: | :white_circle: |
+| EuiChipList           | :black_circle: | :red_circle:   | :white_circle: | :white_circle: | :white_circle: |
 | EuiDatepicker         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiDateRangeSelector  | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiDashboardButton    | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
