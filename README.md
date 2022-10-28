@@ -50,62 +50,62 @@ export default writable(0)
 
 ## components
 
-|Component|status|
-| --- | --- |
-| EuiAlert | done :zap: |
-| EuiAutocomplete | todo |
-| EuiBadge | done :zap: |
-| EuiBlockContent | done :zap: |
-| EuiBlockDocument | todo |
-| EuiButton | todo |
-| EuiButtonGroup | todo |
-| EuiCard | todo |
-| EuiChip | todo |
-| EuiChipList | todo |
-| EuiDatepicker | todo |
-| EuiDateRangeSelector | todo |
-| EuiDashboardButton | todo |
-| EuiDashboardCard | todo |
-| EuiDialog | todo |
-| EuiDisableContent | todo |
-| EuiDiscussionThread | todo |
-| EuiDropdown | todo |
-| EuiDropdownButtonMenu | todo |
-| EuiFeedbackMessage | todo |
-| EuiFileUpload | todo |
-| EuiFieldset | todo |
-| EuiGrowl | todo |
-| EuiIcon | todo |
-| EuiIconSvg | done :zap: |
-| EuiIconToggle | todo |
-| EuiLabel | todo |
-| EuiList | todo |
-| EuiMessageBox | todo |
-| EuiPaginator | todo |
-| EuiPopover | todo |
-| EuiProgressCircle | todo |
-| EuiSlideToggle | todo |
-| EuiTabs | todo |
-| EuiTable | todo |
-| EuiTimebar | todo |
-| EuiTimeline | todo |
-| EuiTimepicker | todo |
-| EuiWizard | todo |
-| EuiInputNumber | todo |
-| EuiInputCheckbox | todo |
-| EuiInputRadio | todo |
-| EuiInputText | todo |
-| EuiSelect | todo |
-| EuiTextarea | todo |
-| EuiInputGroup | todo |
-| EuiDropdownButton | todo |
-| EuiSplitButton | todo |
-| EuiTooltip | todo |
-| EuiMaxLength | todo |
-| EuiPage | todo |
-| EuiPageHeader | todo |
-| EuiPageColumns | todo |
-| EuiBreadcrumb | todo |
-| EuiSidebarMenu | todo |
+|Component              |todo |planed |working |testing |done |
+| ---                   | --- | ---   | ---    | ---    | --- |
+| EuiAlert              | [ ] | [ ]   | [ ]    | [ ]    | [x] |
+| EuiAutocomplete       | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiBadge              | [ ] | [ ]   | [ ]    | [ ]    | [x] |
+| EuiBlockContent       | [ ] | [ ]   | [ ]    | [ ]    | [x] |
+| EuiBlockDocument      | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiButton             | [ ] | [ ]   | [ ]    | [x]    | [ ] |
+| EuiButtonGroup        | [ ] | [ ]   | [ ]    | [x]    | [ ] |
+| EuiCard               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiChip               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiChipList           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiDatepicker         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiDateRangeSelector  | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiDashboardButton    | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiDashboardCard      | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiDialog             | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiDisableContent     | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiDiscussionThread   | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiDropdown           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiDropdownButtonMenu | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiFeedbackMessage    | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiFileUpload         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiFieldset           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiGrowl              | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiIcon               | [ ] | [ ]   | [ ]    | [ ]    | [x] |
+| EuiIconSvg            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiIconToggle         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiLabel              | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiList               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiMessageBox         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiPaginator          | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiPopover            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiProgressCircle     | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiSlideToggle        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiTabs               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiTable              | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiTimebar            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiTimeline           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiTimepicker         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiWizard             | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiInputNumber        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiInputCheckbox      | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiInputRadio         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiInputText          | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiSelect             | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiTextarea           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiInputGroup         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiDropdownButton     | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiSplitButton        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiTooltip            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiMaxLength          | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiPage               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiPageHeader         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiPageColumns        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiBreadcrumb         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiSidebarMenu        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
 
 ## predefined layouts
