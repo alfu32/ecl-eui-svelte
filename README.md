@@ -58,7 +58,8 @@ export default writable(0)
 | EuiBlockContent       | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
 | EuiBlockDocument      | :black_circle: | :white_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiButton             | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| EuiButtonGroup        | :black_circle: | :black_circle: | :red_circle:   | :white_circle: | :white_circle: |
+| EuiButtonGroup        | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| EuiInputButtonGroup   | :black_circle: | :red_circle:   | :white_circle: | :white_circle: | :white_circle: |
 | EuiCard               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiChip               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiChipList           | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
