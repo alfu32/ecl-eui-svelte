@@ -52,60 +52,60 @@ export default writable(0)
 
 |Component              |todo |planed |working |testing |done |
 | ---                   | --- | ---   | ---    | ---    | --- |
-| EuiAlert              | -[x] | -[x]   | -[x]    | -[x]    | -[x] |
-| EuiAutocomplete       | -[x] | -[ ]           | -[ ]            | -[ ]            | -[ ]         |
-| EuiBadge              | -[x] | -[x]   | -[x]    | -[x]    | -[x] |
-| EuiBlockContent       | -[x] | -[x]   | -[x]    | -[x]    | -[x] |
-| EuiBlockDocument      | -[x] | -[ ]           | -[ ]            | -[ ]            | -[ ]         |
-| EuiButton             | -[x] | -[x]   | -[x]    | -[x]    | -[x] |
-| EuiButtonGroup        | -[x] | -[x]   | -[x]    | -[x]    | -[x] |
-| EuiCard               | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiChip               | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiChipList           | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiDatepicker         | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiDateRangeSelector  | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiDashboardButton    | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiDashboardCard      | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiDialog             | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiDisableContent     | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiDiscussionThread   | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiDropdown           | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiDropdownButtonMenu | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiFeedbackMessage    | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiFileUpload         | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiFieldset           | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiGrowl              | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiIcon               | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiIconSvg            | -[x] | -[x]   | -[x]    | -[x]    | -[x] |
-| EuiIconToggle         | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiLabel              | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiList               | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiMessageBox         | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiPaginator          | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiPopover            | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiProgressCircle     | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiSlideToggle        | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiTabs               | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiTable              | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiTimebar            | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiTimeline           | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiTimepicker         | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiWizard             | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiInputNumber        | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiInputCheckbox      | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiInputRadio         | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiInputText          | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiSelect             | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiTextarea           | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiInputGroup         | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiDropdownButton     | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiSplitButton        | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiTooltip            | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiMaxLength          | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiPage               | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiPageHeader         | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiPageColumns        | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiBreadcrumb         | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
-| EuiSidebarMenu        | -[x] | -[x]   | -[ ]            | -[ ]            | -[ ]         |
+| EuiAlert              | &check; | &check;   | &check;    | &check;    | &check; |
+| EuiAutocomplete       | &check; | &cross;           | &cross;            | &cross;            | &cross;         |
+| EuiBadge              | &check; | &check;   | &check;    | &check;    | &check; |
+| EuiBlockContent       | &check; | &check;   | &check;    | &check;    | &check; |
+| EuiBlockDocument      | &check; | &cross;           | &cross;            | &cross;            | &cross;         |
+| EuiButton             | &check; | &check;   | &check;    | &check;    | &check; |
+| EuiButtonGroup        | &check; | &check;   | &check;    | &check;    | &check; |
+| EuiCard               | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiChip               | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiChipList           | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiDatepicker         | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiDateRangeSelector  | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiDashboardButton    | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiDashboardCard      | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiDialog             | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiDisableContent     | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiDiscussionThread   | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiDropdown           | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiDropdownButtonMenu | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiFeedbackMessage    | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiFileUpload         | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiFieldset           | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiGrowl              | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiIcon               | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiIconSvg            | &check; | &check;   | &check;    | &check;    | &check; |
+| EuiIconToggle         | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiLabel              | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiList               | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiMessageBox         | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiPaginator          | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiPopover            | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiProgressCircle     | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiSlideToggle        | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiTabs               | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiTable              | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiTimebar            | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiTimeline           | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiTimepicker         | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiWizard             | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiInputNumber        | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiInputCheckbox      | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiInputRadio         | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiInputText          | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiSelect             | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiTextarea           | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiInputGroup         | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiDropdownButton     | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiSplitButton        | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiTooltip            | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiMaxLength          | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiPage               | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiPageHeader         | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiPageColumns        | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiBreadcrumb         | &check; | &check;   | &cross;            | &cross;            | &cross;         |
+| EuiSidebarMenu        | &check; | &check;   | &cross;            | &cross;            | &cross;         |
 
 ## predefined layouts
