@@ -52,7 +52,7 @@ export default writable(0)
 
 |Component              |todo |planed |working |testing |done |
 | ---                   | --- | ---   | ---    | ---    | --- |
-| EuiAlert              | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   |
+| EuiAlert              | :green_circle: | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   |
 | EuiAutocomplete       | :black_circle: | :white_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiBadge              | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   |
 | EuiBlockContent       | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   | :red_circle:   |
