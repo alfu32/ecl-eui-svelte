@@ -52,60 +52,60 @@ export default writable(0)
 
 |Component              |todo |planed |working |testing |done |
 | ---                   | --- | ---   | ---    | ---    | --- |
-| EuiAlert              | [ ] | [ ]   | [ ]    | [ ]    | [x] |
-| EuiAutocomplete       | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiBadge              | [ ] | [ ]   | [ ]    | [ ]    | [x] |
-| EuiBlockContent       | [ ] | [ ]   | [ ]    | [ ]    | [x] |
-| EuiBlockDocument      | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiButton             | [ ] | [ ]   | [ ]    | [x]    | [ ] |
-| EuiButtonGroup        | [ ] | [ ]   | [ ]    | [x]    | [ ] |
-| EuiCard               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiChip               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiChipList           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDatepicker         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDateRangeSelector  | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDashboardButton    | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDashboardCard      | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDialog             | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDisableContent     | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDiscussionThread   | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDropdown           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDropdownButtonMenu | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiFeedbackMessage    | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiFileUpload         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiFieldset           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiGrowl              | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiIcon               | [ ] | [ ]   | [ ]    | [ ]    | [x] |
-| EuiIconSvg            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiIconToggle         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiLabel              | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiList               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiMessageBox         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiPaginator          | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiPopover            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiProgressCircle     | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiSlideToggle        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTabs               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTable              | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTimebar            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTimeline           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTimepicker         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiWizard             | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiInputNumber        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiInputCheckbox      | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiInputRadio         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiInputText          | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiSelect             | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTextarea           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiInputGroup         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDropdownButton     | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiSplitButton        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTooltip            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiMaxLength          | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiPage               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiPageHeader         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiPageColumns        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiBreadcrumb         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiSidebarMenu        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiAlert              | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox" checked/>    | <input type="checkbox" checked/>    | <input type="checkbox" checked/> |
+| EuiAutocomplete       | <input type="checkbox" checked/> | <input type="checkbox"/>           | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiBadge              | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox" checked/>    | <input type="checkbox" checked/>    | <input type="checkbox" checked/> |
+| EuiBlockContent       | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox" checked/>    | <input type="checkbox" checked/>    | <input type="checkbox" checked/> |
+| EuiBlockDocument      | <input type="checkbox" checked/> | <input type="checkbox"/>           | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiButton             | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox" checked/>    | <input type="checkbox" checked/>    | <input type="checkbox" checked/> |
+| EuiButtonGroup        | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox" checked/>    | <input type="checkbox" checked/>    | <input type="checkbox" checked/> |
+| EuiCard               | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiChip               | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiChipList           | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiDatepicker         | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiDateRangeSelector  | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiDashboardButton    | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiDashboardCard      | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiDialog             | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiDisableContent     | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiDiscussionThread   | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiDropdown           | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiDropdownButtonMenu | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiFeedbackMessage    | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiFileUpload         | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiFieldset           | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiGrowl              | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiIcon               | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiIconSvg            | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox" checked/>    | <input type="checkbox" checked/>    | <input type="checkbox" checked/> |
+| EuiIconToggle         | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiLabel              | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiList               | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiMessageBox         | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiPaginator          | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiPopover            | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiProgressCircle     | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiSlideToggle        | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiTabs               | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiTable              | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiTimebar            | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiTimeline           | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiTimepicker         | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiWizard             | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiInputNumber        | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiInputCheckbox      | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiInputRadio         | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiInputText          | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiSelect             | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiTextarea           | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiInputGroup         | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiDropdownButton     | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiSplitButton        | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiTooltip            | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiMaxLength          | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiPage               | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiPageHeader         | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiPageColumns        | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiBreadcrumb         | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
+| EuiSidebarMenu        | <input type="checkbox" checked/> | <input type="checkbox" checked/>   | <input type="checkbox"/>            | <input type="checkbox"/>            | <input type="checkbox"/>         |
 
 ## predefined layouts
