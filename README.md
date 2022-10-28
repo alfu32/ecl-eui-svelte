@@ -76,7 +76,7 @@ export default writable(0)
 | EuiFileUpload         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiFieldset           | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiGrowl              | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
-| EuiIcon               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiIcon               | :black_circle: | :red_circle:   | :white_circle: | :white_circle: | :white_circle: |
 | EuiIconSvg            | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
 | EuiIconToggle         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 | EuiLabel              | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
