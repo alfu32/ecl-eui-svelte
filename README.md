@@ -52,60 +52,61 @@ export default writable(0)
 
 |Component              |todo |planed |working |testing |done |
 | ---                   | --- | ---   | ---    | ---    | --- |
-| EuiAlert              | [ ] | [ ]   | [ ]    | [ ]    | [x] |
-| EuiAutocomplete       | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiBadge              | [ ] | [ ]   | [ ]    | [ ]    | [x] |
-| EuiBlockContent       | [ ] | [ ]   | [ ]    | [ ]    | [x] |
-| EuiBlockDocument      | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiButton             | [ ] | [ ]   | [ ]    | [x]    | [ ] |
-| EuiButtonGroup        | [ ] | [ ]   | [ ]    | [x]    | [ ] |
-| EuiCard               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiChip               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiChipList           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDatepicker         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDateRangeSelector  | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDashboardButton    | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDashboardCard      | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDialog             | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDisableContent     | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDiscussionThread   | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDropdown           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDropdownButtonMenu | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiFeedbackMessage    | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiFileUpload         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiFieldset           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiGrowl              | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiIcon               | [ ] | [ ]   | [ ]    | [ ]    | [x] |
-| EuiIconSvg            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiIconToggle         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiLabel              | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiList               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiMessageBox         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiPaginator          | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiPopover            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiProgressCircle     | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiSlideToggle        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTabs               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTable              | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTimebar            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTimeline           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTimepicker         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiWizard             | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiInputNumber        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiInputCheckbox      | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiInputRadio         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiInputText          | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiSelect             | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTextarea           | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiInputGroup         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiDropdownButton     | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiSplitButton        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiTooltip            | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiMaxLength          | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiPage               | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiPageHeader         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiPageColumns        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiBreadcrumb         | [x] | [ ]   | [ ]    | [ ]    | [ ] |
-| EuiSidebarMenu        | [x] | [ ]   | [ ]    | [ ]    | [ ] |
+| EuiAlert              | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| EuiAutocomplete       | :black_circle: | :white_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiBadge              | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| EuiBlockContent       | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| EuiBlockDocument      | :black_circle: | :white_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiButton             | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| EuiButtonGroup        | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| EuiInputButtonGroup   | :black_circle: | :red_circle:   | :white_circle: | :white_circle: | :white_circle: |
+| EuiCard               | :black_circle: | :red_circle:   | :white_circle: | :white_circle: | :white_circle: |
+| EuiChip               | :black_circle: | :red_circle:   | :white_circle: | :white_circle: | :white_circle: |
+| EuiChipList           | :black_circle: | :red_circle:   | :white_circle: | :white_circle: | :white_circle: |
+| EuiDatepicker         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiDateRangeSelector  | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiDashboardButton    | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiDashboardCard      | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiDialog             | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiDisableContent     | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiDiscussionThread   | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiDropdown           | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiDropdownButtonMenu | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiFeedbackMessage    | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiFileUpload         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiFieldset           | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiGrowl              | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiIcon               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiIconSvg            | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| EuiIconToggle         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiLabel              | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiList               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiMessageBox         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiPaginator          | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiPopover            | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiProgressCircle     | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiSlideToggle        | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiTabs               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiTable              | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiTimebar            | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiTimeline           | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiTimepicker         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiWizard             | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiInputNumber        | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiInputCheckbox      | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiInputRadio         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiInputText          | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiSelect             | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiTextarea           | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiInputGroup         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiDropdownButton     | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiSplitButton        | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiTooltip            | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiMaxLength          | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiPage               | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiPageHeader         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiPageColumns        | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiBreadcrumb         | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
+| EuiSidebarMenu        | :black_circle: | :black_circle: | :white_circle: | :white_circle: | :white_circle: |
 
 ## predefined layouts
