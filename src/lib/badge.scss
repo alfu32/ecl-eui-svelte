@@ -1,0 +1,33 @@
+.eui-badge {
+    align-items: center;
+    background-color: v(eui-base-color-primary-100);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: v(eui-base-spacing-2xl);
+    color: v(eui-base-color-white);
+    display: inline-flex;
+    font-size: v(eui-base-font-size-s);
+    justify-content: center;
+    height: calc(#{v(eui-base-spacing-m)} + #{v(eui-base-spacing-2xs)});        // 20px
+    min-width: calc(#{v(eui-base-spacing-m)} + #{v(eui-base-spacing-2xs)});     // 20px
+    padding: 0 v(eui-base-spacing-2xs);   // DS aligned
+    @include eui-ellipsis();
+}
+
+// COMPOSITION: ICON + BADGE
+.eui-icon {
+    .eui-badge {
+        position: absolute;
+        right: -30%;
+        top: -10%;
+        transition: all 0.3s ease;
+    }
+}
+
+// COMPOSITION: BUTTON + BADGE
+.eui-button {
+    .eui-badge {
+        height: inherit;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+}

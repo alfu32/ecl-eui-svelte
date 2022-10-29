@@ -1,15 +1,18 @@
 <script lang="ts">
+    import { children } from "svelte/internal";
     import type { T_NullableProp } from "./lib/T_NullableProp";
 
 
     export let title:string=""
     export let phase:'todo'|'plan'|'work'|'done'|'test'|'ready'='todo';
     $:iconclass=` ${phase}`;
+    //$:childrenCount=Array.prototype.slice.call(children[0].children).map(c => (c.nodeValue||c.tagName))
+    export let childrenCount=10
 </script>
 
 <details title={title}>
     <summary class="{iconclass}">
-        <strong>{title}</strong>
+        <strong>{title}</strong>[{childrenCount}]
     </summary>
     <hr/>
     <div>
@@ -19,6 +22,7 @@
 <style>
     details{
         border:1px solid #3330;
+        padding-left:24px
     }
     details:hover{
         border:1px solid #333;

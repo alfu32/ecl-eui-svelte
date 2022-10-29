@@ -1,0 +1,15 @@
+.eui-label {
+    // @include eui-font(m, ui);   // Disabled due to issues when used inside other comps (ex: chip)
+    display: inline-block;
+    font-family: v(eui-base-font-family);
+    white-space: pre;
+
+    &__sublabel {
+        // @include eui-font(s, ui);
+        color: v(eui-base-color-grey-75);
+        display: block;
+        font-family: v(eui-base-font-family);
+        margin-bottom: v(eui-base-spacing-xs);
+        margin-top: v(eui-base-spacing-xs);
+    }
+}

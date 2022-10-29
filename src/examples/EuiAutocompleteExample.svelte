@@ -4,7 +4,7 @@
     import Example from "../Example.svelte";
     import EuiAutocomplete from "../lib/EuiAutocomplete.svelte";
 </script>
-<Example title="EuiAutocomplete"  phase="todo">
+<Example title="EuiAutocomplete"  phase="work">
     <EuiAutocomplete>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven

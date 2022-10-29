@@ -1,0 +1,44 @@
+.eui-label {
+    &--primary {
+        color: v(eui-base-color-primary-100);
+    }
+
+    &--secondary {
+        color: v(eui-base-color-grey-75);    // DS aligned WCAG AA compliant
+    }
+
+    &--info {
+        color: v(eui-base-color-info-100);
+    }
+
+    &--success {
+        color: v(eui-base-color-success-100);
+    }
+
+    &--warning {
+        color: v(eui-base-color-warning-140);    // DS aligned WCAG2 AA compliant
+    }
+
+    &--danger {
+        color: v(eui-base-color-danger-100);
+    }
+
+    &--required {
+        &::after {
+            color: v(eui-base-color-danger-100);
+            content: '*';
+            font-weight: bold;
+            font-size: v(eui-base-font-size-l);
+            line-height: 1;
+            padding-left: v(eui-base-spacing-2xs);
+        }
+    }
+
+    &--disabled {
+        color: v(eui-base-color-grey-25);    // DS aligned
+    }
+
+    &--readonly {
+        color: v(eui-base-color-grey-50);     // DS aligned
+    }
+}

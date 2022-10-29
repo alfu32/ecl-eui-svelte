@@ -65,12 +65,17 @@
 
 <main>
   <div>
+    <Example title="atoms" phase="work" childrenCount={4}>
+      <EuiBadgeExample/>
+      <EuiIconExample/>
+      <EuiIconSvgExample/>
+      <EuiIconToggleExample/>
+    </Example>
+    <Example title="components" phase="work" childrenCount={48}>
     <EuiAlertExample/>
     <EuiAutocompleteExample/>
-    <EuiBadgeExample/>
     <EuiBlockContentExample/>
     <EuiBlockDocumentExample/>
-    <EuiBreadcrumbExample/>
     <EuiButtonExample/>
     <EuiButtonGroupExample/>
     <EuiCardExample/>
@@ -90,9 +95,6 @@
     <EuiFieldsetExample/>
     <EuiFileUploadExample/>
     <EuiGrowlExample/>
-    <EuiIconExample/>
-    <EuiIconSvgExample/>
-    <EuiIconToggleExample/>
     <EuiInputCheckboxExample/>
     <EuiInputGroupExample/>
     <EuiInputNumberExample/>
@@ -109,8 +111,6 @@
     <EuiPopoverExample/>
     <EuiProgressCircleExample/>
     <EuiSelectExample/>
-    <EuiSidebarMenuExample/>
-    <EuiSlideToggleExample/>
     <EuiSplitButtonExample/>
     <EuiTableExample/>
     <EuiTabsExample/>
@@ -120,6 +120,14 @@
     <EuiTimepickerExample/>
     <EuiTooltipExample/>
     <EuiWizardExample/>
+  </Example>
+  <Example title="externals" phase="work" childrenCount={0}></Example>
+  <Example title="layout" phase="work" childrenCount={3}>
+    <EuiBreadcrumbExample/>
+    <EuiSidebarMenuExample/>
+    <EuiSlideToggleExample/>
+  </Example>
+  <Example title="legacy" phase="work" childrenCount={0}></Example>
   </div>
 </main>
 

@@ -1,0 +1,36 @@
+.eui-block-content {
+    &--blocked .eui-block-content__wrapper {
+        min-height: 100px;
+        position: relative;
+        z-index: v(eui-base-z-index-overlay);
+
+        &::before {
+            -webkit-animation: spin 0.8s linear infinite;
+            animation: spin 0.8s linear infinite;
+            border: 8px solid transparent;
+            border-radius: 50%;
+            border-top-color: v(eui-base-color-primary-100);
+            content: "";
+            display: block;
+            height: 80px;
+            left: 50%;
+            margin: -40px 0 0 -40px;
+            position: absolute;
+            top: 50%;
+            width: 80px;
+            z-index: 10002;
+        }
+
+        &::after {
+            background-color: rgba(255, 255, 255, 0.4);
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10001;
+        }
+
+    }
+}

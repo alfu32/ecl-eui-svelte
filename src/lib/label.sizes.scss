@@ -1,0 +1,9 @@
+.eui-label {
+    &--size-s {
+        font-size: v(eui-base-font-size-s);
+    }
+
+    &--size-m {
+        font-size: v(eui-base-font-size);
+    }
+}

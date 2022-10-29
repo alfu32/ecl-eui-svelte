@@ -1,11 +1,17 @@
 
 <!-- file: "src/examples/EuiButtonExample.svelte" -->
 <script lang="ts">
+    import EuiIconSvg from "../lib/EuiIconSvg.svelte";
     import Example from "../Example.svelte";
     import EuiButton from "../lib/EuiButton.svelte";
 </script>
 <Example title="EuiButton" phase="work">
 
+    <EuiButton>default</EuiButton>
+    <EuiButton isLoading={true}>default</EuiButton>
+    <EuiButton>default</EuiButton>
+    <EuiButton>default</EuiButton>
+    <EuiButton>default</EuiButton>
     <EuiButton>default</EuiButton>
     <h6 class="section-title">Explicit variant</h6>
     <p>Using one of the following input option : <code>kind="primary"</code> | <code>kind="secondary"</code> | <code>kind="info"</code> | <code>kind="success"</code> | <code>kind="warning"</code> | <code>kind="danger"</code> | <code>kind="accent"</code></p>
@@ -80,4 +86,16 @@
       <EuiButton disabled kind="danger" outline>outline danger</EuiButton>
       <EuiButton disabled kind="accent" outline>outline accent</EuiButton>
     </div>
+    <h4>Icon Button</h4>
+    <p>Using the <code>euiIconButton</code> input option</p>
+<div class="eui-u-flex eui-u-flex-wrap eui-u-mt-m">
+    <EuiButton euiIconButton class="eui-u-mr-s eui-u-mb-s"><EuiIconSvg icon="eui-icon-bell" aria-label="Bell Icon"/></EuiButton>
+    <EuiButton euiIconButton class="eui-u-mr-s eui-u-mb-s" euiPrimary><EuiIconSvg icon="eui-icon-bell" aria-label="Bell Icon"/></EuiButton>
+    <EuiButton euiIconButton class="eui-u-mr-s eui-u-mb-s" euiSecondary><EuiIconSvg icon="eui-icon-bell" aria-label="Bell Icon"/></EuiButton>
+    <EuiButton euiIconButton class="eui-u-mr-s eui-u-mb-s" euiInfo><EuiIconSvg icon="eui-icon-bell" aria-label="Bell Icon"/></EuiButton>
+    <EuiButton euiIconButton class="eui-u-mr-s eui-u-mb-s" euiSuccess><EuiIconSvg icon="eui-icon-bell" aria-label="Bell Icon"/></EuiButton>
+    <EuiButton euiIconButton class="eui-u-mr-s eui-u-mb-s" euiWarning><EuiIconSvg icon="eui-icon-bell" aria-label="Bell Icon"/></EuiButton>
+    <EuiButton euiIconButton class="eui-u-mr-s eui-u-mb-s" euiDanger><EuiIconSvg icon="eui-icon-bell" aria-label="Bell Icon"/></EuiButton>
+    <EuiButton euiIconButton class="eui-u-mr-s eui-u-mb-s" euiAccent><EuiIconSvg icon="eui-icon-bell" aria-label="Bell Icon"/></EuiButton>
+</div>
 </Example>

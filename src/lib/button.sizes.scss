@@ -1,0 +1,58 @@
+.eui-button {
+    // 32px
+    &--size-s {
+        height: calc(2 * #{v(eui-base-spacing-m)});
+        min-height: calc(2 * #{v(eui-base-spacing-m)});
+        min-width: calc(2 * #{v(eui-base-spacing-m)});
+        padding: 0 v(eui-base-spacing-s);
+
+        .eui-button__container {
+            font-size: v(eui-base-font-size-s);
+
+            .eui-icon {
+                font-size: v(eui-base-font-size-xl);
+            }
+        }
+
+        &.eui-button--icon-only {
+            padding: 0;
+        }
+    }
+
+    // 44px
+    &--size-m {
+        .eui-button__container {
+            font-size: v(eui-base-font-size);
+
+            .eui-icon {
+                font-size: v(eui-base-font-size-xl);
+            }
+        }
+    }
+
+    // 52px
+    &--size-l {
+        height: calc(3.25 * #{v(eui-base-spacing-m)});
+        min-height: calc(3.25 * #{v(eui-base-spacing-m)});
+        min-width: calc(3.25 * #{v(eui-base-spacing-m)});
+
+        .eui-button__container {
+            font-size: v(eui-base-font-size-l);
+
+            .eui-label + .eui-badge {
+                max-height: inherit;
+            }
+
+            .eui-icon {
+                font-size: v(eui-base-font-size-2xl);
+            }
+        }
+    }
+
+    // Using SVG icons needs size ponderation to match button height
+    .eui-icon-svg {
+        &--size-l { height: 1.5rem; width: 1.5rem; }    // 2
+        &--size-m { height: 1.25rem; width: 1.25rem; }  // 1.5
+        &--size-s { height: 1rem; width: 1rem; }        // 1.25
+    }
+}

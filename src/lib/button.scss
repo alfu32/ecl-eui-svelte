@@ -1,0 +1,218 @@
+// stylelint-disable no-descending-specificity
+// Resolves issue in Firefox with extra borders
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: none;   // Default: button
+}
+
+.eui-button {
+    @include eui-font(m, ui);
+    align-items: center;
+    background-color: v(eui-base-color-white);
+    background-image: none;
+    border: none;
+    border-radius: v(eui-base-border-radius);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: v(eui-base-font-size);
+    justify-content: center;
+    min-height: calc(#{v(eui-base-spacing-2xl)} + #{v(eui-base-spacing-2xs)});   // Match squared 44x44
+    min-width: calc(#{v(eui-base-spacing-2xl)} + #{v(eui-base-spacing-2xs)});    // Match squared 44x44
+    outline: none;
+    padding: calc(#{v(eui-base-spacing-s)} - 1px) v(eui-base-spacing-m);   // DS aligned
+    text-transform: none;
+    transition: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &:active,
+    &.active,
+    &:focus {
+        z-index: 1;     // Bring to the front to overlay the borders properly
+        @include eui-accessible-focus();
+    }
+
+    .eui-button__container {
+        align-items: center;
+        display: inline-flex;
+        position: relative;
+
+        .eui-icon {
+            font-size: v(eui-base-font-size-xl);
+        }
+
+        // If FA is used, resize to match default text alignment
+        .fa {
+            font-size: v(eui-base-font-size);
+            padding-right: v(eui-base-spacing-2xs);
+        }
+
+        // Icon left
+        .eui-icon:first-child:not(.eui-u-loading),
+        > .eui-icon:not(.eui-u-loading) {   // or when no euiLabel present child did not work
+            margin-right: v(eui-base-spacing-xs);
+
+            &:not(.eui-button--icon-only) {
+                margin-left: 0;
+            }
+        }
+
+        // Icon right
+        .eui-icon:last-child:not(.eui-u-loading) {
+            margin-left: v(eui-base-spacing-xs);
+
+            &:not(.eui-button--icon-only) {
+                margin-right: 0;
+            }
+        }
+
+        .eui-label + .eui-badge {
+            margin-left: v(eui-base-spacing-s);
+            max-height: calc(#{v(eui-base-spacing-m)} + #{v(eui-base-spacing-2xs)});
+            font-size: var(--eui-base-font-size-s);
+        }
+
+        .eui-label + .eui-icon {
+            margin-left: v(eui-base-spacing-s);
+        }
+    }
+
+    &--icon-only {
+        padding: calc(#{v(eui-base-spacing-s)} - 1px);   // DS aligned;
+    }
+
+    .eui-button__loading-icon {
+        align-items: center;
+        display: inline-flex;
+
+        .eui-icon.eui-u-loading {
+            margin-right: v(eui-base-spacing-xl);
+        }
+    }
+}
+
+// BUTTON FIXED (used in Showcase shared components)
+.eui-button-fixed {
+    bottom: v(eui-base-spacing-3xl);
+    position: fixed;
+    right: v(eui-base-spacing-xl);
+    z-index: calc(#{v(eui-base-z-index-btn-floating)} + 1);  // Allow to be over the footer & page columns
+}
+
+// BUTTON FLOATING
+.eui-button-floating {
+    align-items: center;
+    border-radius: 100%;
+    display: inline-flex;
+    height: v(eui-base-spacing-3xl);
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    transform: translateY(35%);
+    transition: 0.3s;
+    vertical-align: middle;
+    width: v(eui-base-spacing-3xl);
+    z-index: 1;
+    box-shadow: v(eui-base-shadow-2);
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: v(eui-base-shadow-3);
+    }
+
+    .eui-icon {
+        display: inline-block;
+        font-size: v(eui-base-font-size-3xl);
+        text-align: center;
+        width: inherit;
+    }
+
+    &::before {
+        border-radius: 0;
+    }
+}
+
+// BUTTON LINK
+a.eui-button {
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: v(eui-base-color-white);
+        text-decoration: none;
+    }
+
+    &.eui-button--accent:hover,
+    &.eui-button--secondary:hover {
+        color: v(eui-base-color-text);
+    }
+}
+
+// BUTTON AS EXPAND TRIGGER
+// Seel also --expand-toggle in button.states
+.eui-button__expand-trigger {
+    border-top: 1px solid v(eui-base-color-grey-15);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: v(eui-base-spacing-l);
+
+    &:hover {
+        .eui-button--expand-toggle {
+            box-shadow: v(eui-base-shadow-3);
+        }
+    }
+
+    &--collapsed {
+        margin-top: v(eui-base-spacing-s);
+    }
+
+    // Compositions
+    .eui-label + .eui-icon,
+    .eui-icon + .eui-label {
+        margin-left: v(eui-base-spacing-s);
+    }
+}
+
+// SPLIT BUTTON (Composition)
+.eui-split-button {
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+
+    &--disabled,
+    &:disabled {
+        pointer-events: none;
+    }
+
+    button {
+        border-radius: v(eui-base-border-radius) 0 0 v(eui-base-border-radius);
+        cursor: pointer;
+    }
+
+    .eui-dropdown button {
+        border-radius: 0 v(eui-base-border-radius) v(eui-base-border-radius) 0;
+        margin-left: -1px;
+    }
+}
+
+// DROPDOWN BUTTON (Composition)
+.eui-dropdown-button {
+    align-items: center;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    position: relative;
+
+    &--disabled,
+    &:disabled {
+        pointer-events: none;
+    }
+}
