@@ -1,14 +1,16 @@
 
 <script lang="ts">
     import type { T_EuiAlertKind } from "./T_EuiAlertKind";
-    import type { T_EuiButtonKind } from "./T_EuiBadgeKind";
+    import type { T_EuiBadgeKind} from "./T_EuiBadgeKind";
     import type { T_EuiIconSize } from "./T_EuiIconSize";
     import type { T_EuiSize } from "./T_EuiSize";
     import type { T_Nullable, T_NullableProp } from "./T_NullableProp";
 
+    let clazz:  string = "";
+    export { clazz as class };
     export let icon: T_Nullable<string> = 'eui-icon-bell';
-    export let isLoading: boolean = false;
-    export let kind: T_Nullable<T_EuiButtonKind> = null
+    export let isLoading: T_Nullable<true> = null;
+    export let kind: T_Nullable<T_EuiBadgeKind> = null
     //export let iconUrl: T_Nullable<string> = null;
     //export let set: T_Nullable<string>="eui";
     export let size: T_EuiIconSize = "";
@@ -22,19 +24,20 @@
     export let fillColor: T_Nullable<string> = null;
     $:cssClasses = [
             //super.getCssClasses('eui-icon-svg'),
-            'eui-icon-svg',
+            'eui-icon',
             icon && !isLoading ? icon : ``,
             isLoading ? 'eui-u-loading' : '',
             fillColor!==null?`eui-icon-svg--color-${fillColor}`:'',
             `eui-icon-svg--size-${size}`,
             kind!==null?`eui-icon--${kind}`:'',
+            clazz
         ].join(' ').trim()
 </script>
 <span class={cssClasses}
 aria-hidden={ariaHidden}
 aria-labelledby={ariaLabelledby}
 aria-label={ariaLabel}
-{role}></span>
+{role}><slot></slot></span>
 <!--
 {#if icon!==null && iconUrl===null}
 icon

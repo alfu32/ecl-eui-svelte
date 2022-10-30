@@ -3,9 +3,18 @@
     import EuiIconSvg from "./EuiIconSvg.svelte";
     import type { T_EuiAlertKind } from "./T_EuiAlertKind";
     import type { T_EuiSize } from "./T_EuiSize";
+
+    let clazz:  string = "";
+    export { clazz as class };
     export let euiAlertMuted: boolean = false;
     export let size: T_EuiSize  = "m";
     export let kind: T_EuiAlertKind  = "information";
+    $:classList = [
+        "eui-alert",
+        euiAlertMuted ? ' eui-alert--muted' : '',
+        kind ? ` eui-alert--${kind}`: '',
+        clazz,
+    ].join(" ")
     const infocatToIconIdMap:{[cat in T_EuiAlertKind]:T_EuiIcon} = {
         "information":"ecl-information",
         "success":"ecl-success",
@@ -22,9 +31,7 @@
         isClosed=true;
     }
 </script>
-<div class="eui-alert{euiAlertMuted ? ' eui-alert--muted' : ''}{kind
-    ? ` eui-alert--${kind}`
-    : ''}">
+<div class={classList}>
     {#if !isClosed}
     <div class="eui-alert__content-wrapper">
         <div role="alert">

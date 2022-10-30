@@ -131,5 +131,6 @@
   </div>
 </main>
 
-<style>
+<style lang="scss">
+  @import '../node_modules/@eui/styles/dist/styles/eui.css'
 </style>

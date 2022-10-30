@@ -28,13 +28,14 @@ readLibDir().forEach(
         const content=`
             // file: "src/lib/${n}.svelte"
             <script lang="ts">
-                import type { T_EuiButtonKind } from "./T_EuiBadgeKind";
+                import type { T_EuiBadgeKind } from "./T_EuiBadgeKind";
+import type { T_Nullable } from "./T_EuiBadgeKind";
                 import type { T_NullableProp } from "./T_NullableProp";
 
                 export let disabled: T_NullableProp = null;
                 export let outline: T_NullableProp = null;
                 export let flat: T_NullableProp = null;
-                export let kind: T_EuiButtonKind = null;
+                export let kind: T_Nullable<T_EuiBadgeKind> = null;
             </script>
             <div class="${n}">
                 <h4>${n}<h4>

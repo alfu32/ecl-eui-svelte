@@ -1,16 +1,18 @@
 
 <script lang="ts">
-    import type { T_EuiButtonKind } from "./T_EuiBadgeKind";
-    import type { T_NullableProp } from "./T_NullableProp";
+    import type { T_EuiBadgeKind } from "./T_EuiBadgeKind";
+    import type { T_Nullable } from "./T_NullableProp";
 
 
 
-    export let disabled: T_NullableProp = null;
-    export let outline: T_NullableProp = null;
-    export let flat: T_NullableProp = null;
-    export let kind: T_EuiButtonKind = null;
+    export let disabled: T_Nullable<true> = null;
+    let clazz:  string = "";
+    export { clazz as class };
+    export let outline: T_Nullable<true> = null;
+    export let flat: T_Nullable<true> = null;
+    export let kind: T_Nullable<T_EuiBadgeKind> = null;
     export let chipsPosition: ('bottom'|'inside'|'top')='bottom'
-    export let hasChips: T_NullableProp = null;
+    export let hasChips: T_Nullable<true> = null;
     export let matAutocompleteOrigin: string = 'ahem'
 </script>
 <div class="eui-autocomplete__container" data={matAutocompleteOrigin}>

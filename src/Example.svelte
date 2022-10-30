@@ -1,6 +1,5 @@
 <script lang="ts">
     import { children } from "svelte/internal";
-    import type { T_NullableProp } from "./lib/T_NullableProp";
 
 
     export let title:string=""

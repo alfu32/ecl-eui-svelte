@@ -1,17 +1,39 @@
 <script lang="ts">
-    import type { T_EuiButtonKind } from "../lib/T_EuiBadgeKind";
-    import type { T_NullableProp } from "../lib/T_NullableProp";
+    import type { T_Nullable } from "../lib/T_NullableProp";
+    import EuiIcon from "./EuiIcon.svelte";
     import EuiIconSvg from "./EuiIconSvg.svelte";
+    import type { T_EuiBadgeKind } from "./T_EuiBadgeKind";
 
-    export let disabled: T_NullableProp = null;
-    export let outline: T_NullableProp = null;
-    export let flat: T_NullableProp = null;
-    export let kind: T_EuiButtonKind = null;
-    export let isLoading: T_NullableProp = null;
-    $: disabledClass = disabled === true ? " eui-button--disabled" : "";
-    $: outlineClass = outline === true ? " eui-button--outline" : "";
-    $: flatClass = flat === true ? " eui-button--basic" : "";
-    $: kindClass = kind !== null ? ` eui-button--${kind}` : "";
+    export let disabled: T_Nullable<true> = null;
+    let clazz:  string = "";
+    export { clazz as class };
+    export let euiBasicButton: T_Nullable<true> = null;
+    export let euiRaisedButton: T_Nullable<true> = null;
+    export let euiBlockButton: T_Nullable<true> = null;
+    export let euiIconButton: T_Nullable<true> = null;
+    export let euiLineWrap: T_Nullable<true> = null;
+    export let outline: T_Nullable<true> = null;
+    export let euiOutline: T_Nullable<true> = null;
+    export let flat: T_Nullable<true> = null;
+    export let kind: T_Nullable<T_EuiBadgeKind> = null;
+    export let isLoading: T_Nullable<true> = null;
+    export let rounded: T_Nullable<true> = null;
+    export let euiRounded: T_Nullable<true> = null;
+    $:classList=[
+        "eui-button",
+        euiBasicButton ? `eui-button--basic` : ``,
+        euiRaisedButton ? `eui-button--raised` : ``,   // TODO: remove in eUI 15
+        euiBlockButton ? `eui-button--block` : ``,
+        isLoading ? `eui-button--loading` : ``,
+        euiIconButton ? `eui-button--icon-only` : ``,
+        euiLineWrap ? `eui-button--line-wrap` : ``,
+        disabled === true ? " eui-button--disabled" : "",
+        (euiOutline===true || outline === true) ? " eui-button--outline" : "",
+        flat === true ? " eui-button--basic" : "",
+        kind !== null ? ` eui-button--${kind}` : "",
+        (rounded !== null || euiRounded !== null) ? ` eui-button--rounded` : "",
+        clazz,
+    ].join(" ")
 </script>
 
 <button
@@ -19,10 +41,10 @@
     on:click
     aria-disabled={disabled ? "true" : "false"}
     data-e2e="eui-button"
-    class="eui-button{outlineClass}{flatClass}{kindClass}{disabledClass}"
+    class={classList}
 >
     {#if isLoading}
-    <EuiIconSvg icon="ecl-download"></EuiIconSvg>
+    <EuiIcon {isLoading}></EuiIcon>
     {/if}
     <span class="eui-button__container">
         <slot />
