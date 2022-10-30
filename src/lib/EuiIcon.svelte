@@ -13,7 +13,7 @@
     export let kind: T_Nullable<T_EuiBadgeKind> = null
     //export let iconUrl: T_Nullable<string> = null;
     //export let set: T_Nullable<string>="eui";
-    export let size: T_EuiIconSize = "";
+    export let size: T_EuiIconSize = "s";
     export let ariaHidden: T_NullableProp = null
     export let ariaLabelledby: T_Nullable<string> = null
     export let role: T_Nullable<string> = null
@@ -26,6 +26,7 @@
             //super.getCssClasses('eui-icon-svg'),
             'eui-icon',
             icon && !isLoading ? icon : ``,
+            icon && isLoading ? `eui-icon--loading` : ``,
             isLoading ? 'eui-u-loading' : '',
             fillColor!==null?`eui-icon-svg--color-${fillColor}`:'',
             `eui-icon-svg--size-${size}`,

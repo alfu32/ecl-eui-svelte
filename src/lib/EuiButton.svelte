@@ -44,7 +44,7 @@
     class={classList}
 >
     {#if isLoading}
-    <EuiIcon {isLoading}></EuiIcon>
+    <EuiIcon {isLoading} class="eui-button__loading-icon"></EuiIcon>
     {/if}
     <span class="eui-button__container">
         <slot />
@@ -56,4 +56,8 @@
     @import 'button';
     @import 'button.sizes';
     @import 'button.states';
+
+    .eui-button .eui-button__loading-icon .eui-icon.eui-icon--loading {
+        margin-right: var(--eui-base-spacing-xl);
+    }
 </style>

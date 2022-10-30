@@ -6,6 +6,12 @@
     import EuiButton from "../lib/EuiButton.svelte";
     import EuiIcon from "../lib/EuiIcon.svelte";
     import EuiLabel from "../lib/EuiLabel.svelte";
+    import type { T_Nullable } from "src/lib/T_NullableProp";
+
+    let isLoading:T_Nullable<true> = true
+    function toggleLoadingState(e){
+      isLoading=isLoading === null ? true : null
+    }
 </script>
 <Example title="EuiButton" phase="work">
 
@@ -233,5 +239,22 @@
         <EuiButton euiRounded euiIconButton euiOutline class="eui-u-mr-s eui-u-mb-s" kind=danger><EuiIcon icon="eui-icon-bell" ariaLabel="Bell Icon"/></EuiButton>
         <EuiButton euiRounded euiIconButton euiOutline class="eui-u-mr-s eui-u-mb-s" kind=accent><EuiIcon icon="eui-icon-bell" ariaLabel="Bell Icon"/></EuiButton>
     </div>
+
+    <p>Action buttons with a loading state visual is used in some cases to improve better user experience when an action takes too long time to complete.
+      Use the <code>isLoading</code> input option with <code>true</code> | <code>false</code> value to enable/disable it.</p>
+      
+      
+    <div class="eui-u-flex eui-u-flex-wrap eui-u-mt-m">
+      <EuiButton {isLoading} kind="primary" class="eui-u-mr-s eui-u-mb-s">primary</EuiButton>
+      <EuiButton {isLoading} kind="secondary" class="eui-u-mr-s eui-u-mb-s">secondary</EuiButton>
+      <EuiButton {isLoading} kind="info" class="eui-u-mr-s eui-u-mb-s">info</EuiButton>
+      <EuiButton {isLoading} kind="success" class="eui-u-mr-s eui-u-mb-s">success</EuiButton>
+      <EuiButton {isLoading} kind="warning" class="eui-u-mr-s eui-u-mb-s">warning</EuiButton>
+      <EuiButton {isLoading} kind="danger" class="eui-u-mr-s eui-u-mb-s">danger</EuiButton>
+      <EuiButton {isLoading} kind="accent" class="eui-u-mr-s eui-u-mb-s">accent</EuiButton>
+  </div>
+      
+      <br>
+      <EuiButton euiOutline kind="primary" class="eui-u-mr-s eui-u-mb-s" on:click={toggleLoadingState}>Toggle loading state</EuiButton>
     <hr/>
 </Example>
