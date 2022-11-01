@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { children } from "svelte/internal";
+    /*import "brace/mode/html";
+    import "brace/theme/monokai";*/
 
 
     export let title:string=""
@@ -7,16 +8,18 @@
     $:iconclass=` ${phase}`;
     //$:childrenCount=Array.prototype.slice.call(children[0].children).map(c => (c.nodeValue||c.tagName))
     export let childrenCount=10
+    let slotElement:HTMLDivElement;
 </script>
 
 <details title={title}>
     <summary class="{iconclass}">
         <strong>{title}</strong>[{childrenCount}]
     </summary>
+    
     <hr/>
-    <div>
-        <slot></slot>
-    </div>
+        <div bind:this={slotElement}>
+            <slot></slot>
+        </div>
 </details>
 <style>
     details{
