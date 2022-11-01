@@ -3,6 +3,7 @@
 <script lang="ts">
     import EuiIconSvg from "../lib/EuiIconSvg.svelte";
     import Example from "../Example.svelte";
+    import Code from "../Code.svelte";
     import EuiButton from "../lib/EuiButton.svelte";
     import EuiIcon from "../lib/EuiIcon.svelte";
     import EuiLabel from "../lib/EuiLabel.svelte";
@@ -23,6 +24,16 @@
     <EuiButton class="eui-u-mr-s eui-u-mb-s">default</EuiButton>
     <EuiButton class="eui-u-mr-s eui-u-mb-s">default</EuiButton>
   </div>
+  <Code value={`
+    <div class="eui-u-flex eui-u-flex-wrap eui-u-mt-m">
+      <EuiButton class="eui-u-mr-s eui-u-mb-s">default</EuiButton>
+      <EuiButton class="eui-u-mr-s eui-u-mb-s" isLoading>default</EuiButton>
+      <EuiButton class="eui-u-mr-s eui-u-mb-s">default</EuiButton>
+      <EuiButton class="eui-u-mr-s eui-u-mb-s">default</EuiButton>
+      <EuiButton class="eui-u-mr-s eui-u-mb-s">default</EuiButton>
+      <EuiButton class="eui-u-mr-s eui-u-mb-s">default</EuiButton>
+    </div>
+  `}></Code>
   <hr/>
     <h6 class="section-title">Explicit variant</h6>
     <p>Using one of the following input option : <code>kind="primary"</code> | <code>kind="secondary"</code> | <code>kind="info"</code> | <code>kind="success"</code> | <code>kind="warning"</code> | <code>kind="danger"</code> | <code>kind="accent"</code></p>
