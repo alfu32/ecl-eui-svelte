@@ -25,6 +25,10 @@
     details{
         border:1px solid #3330;
         padding-left:24px;
+        padding-right:16px;
+        padding-bottom:5px;
+        padding-top:5px;
+        box-sizing: border-box;
         &:hover{
             border:1px solid #333;
         }

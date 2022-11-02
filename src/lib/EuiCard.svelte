@@ -28,15 +28,11 @@
         clazz,
     ].join(" ")
 </script>
-<div class="{classList}">
-    {#if $$slots.cardHeader}
-        <slot name="cardHeader"></slot>
-    {/if}
-    {#if $$slots.cardMedia}
-        <slot name="cardMedia"></slot>
-    {/if}
+<div class="{classList}" style="box-sizing:border-box">
+    <slot name="cardHeader"></slot>
+    <slot name="cardMedia"></slot>
     <div class="eui-card-content">
-        <slot name="cardContent"></slot>
+        <slot></slot>
     </div>
 
     {#if $$slots.actionIcons || $$slots.actionMenu || $$slots.actionButtons}
