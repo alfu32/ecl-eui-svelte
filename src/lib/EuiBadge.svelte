@@ -10,8 +10,8 @@
 
 <eui-badge aria-disabled="false" role="status" aria-label="eUI Badge" class="eui-badge eui-badge--size-{size} eui-badge--{kind}"><slot></slot></eui-badge>
 <style lang="scss">
-    @import 'base';
-    @import 'badge';
-    @import 'badge.states';
-    @import 'badge.sizes';
+    @import 'scss/base';
+    @import 'scss/badge';
+    @import 'scss/badge.states';
+    @import 'scss/badge.sizes';
 </style>

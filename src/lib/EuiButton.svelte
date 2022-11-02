@@ -3,10 +3,14 @@
     import EuiIcon from "./EuiIcon.svelte";
     import EuiIconSvg from "./EuiIconSvg.svelte";
     import type { T_EuiBadgeKind } from "./T_EuiBadgeKind";
+    import type { T_EuiSize } from "./T_EuiSize";
 
-    export let disabled: T_Nullable<true> = null;
-    let clazz:  string = "";
+    let clazz:  T_Nullable<string> = "";
     export { clazz as class };
+
+    export let ariaLabel:  string = "";
+    
+
     export let euiBasicButton: T_Nullable<true> = null;
     export let euiRaisedButton: T_Nullable<true> = null;
     export let euiBlockButton: T_Nullable<true> = null;
@@ -19,6 +23,9 @@
     export let isLoading: T_Nullable<true> = null;
     export let rounded: T_Nullable<true> = null;
     export let euiRounded: T_Nullable<true> = null;
+    export let euiSize: T_Nullable<T_EuiSize> = null;
+    export let disabled: T_Nullable<true> = null;
+
     $:classList=[
         "eui-button",
         euiBasicButton ? `eui-button--basic` : ``,
@@ -32,6 +39,7 @@
         flat === true ? " eui-button--basic" : "",
         kind !== null ? ` eui-button--${kind}` : "",
         (rounded !== null || euiRounded !== null) ? ` eui-button--rounded` : "",
+        (euiSize !== null ) ? "" : "",
         clazz,
     ].join(" ")
 </script>
@@ -52,10 +60,10 @@
 </button>
 
 <style lang="scss">
-    @import 'base';
-    @import 'button';
-    @import 'button.sizes';
-    @import 'button.states';
+    @import 'scss/base';
+    @import 'scss/button';
+    @import 'scss/button.sizes';
+    @import 'scss/button.states';
 
     .eui-button .eui-button__loading-icon .eui-icon.eui-icon--loading {
         margin-right: var(--eui-base-spacing-xl);

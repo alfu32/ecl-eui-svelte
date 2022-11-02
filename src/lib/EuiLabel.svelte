@@ -14,9 +14,9 @@
     <slot></slot>
 </div>
 <style lang="scss">
-    @import 'base';
-    @import 'label';
-    @import 'label.states';
-    @import 'label.sizes';
+    @import 'scss/base';
+    @import 'scss/label';
+    @import 'scss/label.states';
+    @import 'scss/label.sizes';
 
 </style>

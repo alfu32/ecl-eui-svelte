@@ -11,6 +11,6 @@
 </div>
 
 <style lang="scss">
-    @import 'base';
-    @import 'block-content';
+    @import 'scss/base';
+    @import 'scss/block-content';
 </style>

@@ -147,6 +147,14 @@ export function later<T>(fn:()=>T,intv:number):Promise<T>{
         },intv)
     })
 }
+class Option<T>{
+    empty=false
+    constructor(public value:T){
+        if(this.value==null) {
+            this.empty=true;
+        }
+    }
+}
 class Resource<T>{
     constructor(public id:string,public value:T){}
 }
@@ -170,7 +178,7 @@ export async function getResource<T>(getter:()=>Resource<T>,intv=100,iterLimit=1
 window["selectorCache"]={}
 export async function getElementBySelector(selector: string,intv=100,iterLimit=100):Promise<HTMLElement> {
     if(selector in window["selectorCache"]){
-        console.log({cache:"hit",selector,element:window["selectorCache"][selector]})
+        console.log({op:"get",cache:"hit",selector,element:window["selectorCache"][selector]})
         return window["selectorCache"][selector]
     }
     let fn = () => document.querySelector<HTMLElement>(selector)
@@ -184,4 +192,13 @@ export async function getElementBySelector(selector: string,intv=100,iterLimit=1
         window["resourceCache"][selector]=elm;
     }
     return elm
+}
+export function removeFromCache(selector:string){
+    if(selector in window["selectorCache"]){
+        console.log({op:"delete",cache:"hit",selector,element:window["selectorCache"][selector]})
+        const v = window["selectorCache"][selector]
+        delete window["selectorCache"][selector]
+        return v;
+    }
+    return null;
 }

@@ -1,0 +1,36 @@
+.eui-breadcrumb-item {
+    align-items: center;
+    display: flex;
+    font-size: v(eui-base-font-size-s);     // DS aligned
+    font-weight: 700;                       // DS aligned
+
+    &__separator {
+        align-items: center;
+        display: flex;
+        padding: 0 v(eui-base-spacing-2xs); // DS aligned
+    }
+
+    .eui-button {
+
+        background-color: transparent;
+        border: 1px solid transparent;
+        font-size: v(eui-base-font-size-s);     // DS aligned
+        font-weight: 700;                       // DS aligned
+        padding: 0 v(eui-base-spacing-2xs);     // DS aligned
+
+        &:hover {
+            background-color: transparent !important;
+        }
+    }
+
+    .eui-label {
+        white-space: nowrap;
+        text-decoration: none !important;
+
+        &--secondary {
+            color: v(eui-base-color-grey-75);   // DS aligned
+            cursor: none;
+            pointer-events: none;
+        }
+    }
+}

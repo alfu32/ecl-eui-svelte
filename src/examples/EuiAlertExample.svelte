@@ -18,6 +18,9 @@
     <EuiAlert isCloseable={true} kind="danger">this is a great closable danger</EuiAlert>
     <EuiAlert isCloseable={true} kind="secondary">this is a great closable secondary</EuiAlert>
     <Code value={`
+        <script lang="ts">
+            import EuiAlert from "../lib/EuiAlert.svelte";
+        </script>
         <EuiAlert>this is a great info</EuiAlert>
         <EuiAlert kind="success">this is a great success</EuiAlert>
         <EuiAlert kind="warning">this is a great warning</EuiAlert>

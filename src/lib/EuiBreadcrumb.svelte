@@ -15,8 +15,9 @@
     <h4>EuiBreadcrumb<h4>
     <slot></slot>
 </div>
-<style>
-    .EuiBreadcrumb{
-        border:1px solid #ccc;
-    }
+<style lang="scss">
+    @import 'scss/base';
+    @import 'scss/breadcrumb';
+    @import 'scss/breadcrumb.mq';
+    @import 'scss/breadcrumb-item';
 </style>

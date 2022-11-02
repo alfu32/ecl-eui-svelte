@@ -39,6 +39,9 @@
 </div>
 
 <Code value={`
+    <script lang="ts">
+        import EuiBadge from "../lib/EuiBadge.svelte";
+    </script>
     <div class="eui-u-flex eui-u-flex-justify-content-evenly eui-u-flex-wrap">
         <span class="col eui-u-flex eui-u-flex-column">
             <span>euiPrimary</span>

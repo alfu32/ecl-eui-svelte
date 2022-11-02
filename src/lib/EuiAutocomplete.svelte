@@ -164,7 +164,7 @@
     </div>
 </div>
 <style lang="scss">
-    @import 'base';
-    @import 'autocomplete';
-    @import 'autocomplete.states';
+    @import 'scss/base';
+    @import 'scss/autocomplete';
+    @import 'scss/autocomplete.states';
 </style>

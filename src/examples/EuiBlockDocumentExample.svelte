@@ -16,6 +16,10 @@
         est laborum."
     </EuiBlockDocument>
     <Code value={`
+    <script lang="ts">
+        // --
+        import EuiBlockDocument from "../lib/EuiBlockDocument.svelte";
+    </script>
         <EuiBlockDocument>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven

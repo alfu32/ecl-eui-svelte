@@ -48,7 +48,7 @@
     {/if}
 </div>
 <style lang="scss">
-    @import 'base';
-    @import 'alert';
-    @import 'alert.states';
+    @import 'scss/base';
+    @import 'scss/alert';
+    @import 'scss/alert.states';
 </style>

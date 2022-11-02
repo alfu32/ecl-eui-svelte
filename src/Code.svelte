@@ -19,7 +19,7 @@
     import 'ace-builds/src-min-noconflict/theme-eclipse';
 
     import EuiButton from "./lib/EuiButton.svelte";
-    import { formatXml, getElementBySelector, trimIndent } from "./string-util";
+    import { formatXml, getElementBySelector,removeFromCache, trimIndent } from "./string-util";
     import { onDestroy } from 'svelte';
 
     export let value: string;
@@ -42,6 +42,7 @@
     let aceEditorContainer: HTMLElement=null;
     onDestroy(()=>{
         editor.destroy()
+        removeFromCache(`#${id}`)
     })
     async function mountContainer() {
         
