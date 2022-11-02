@@ -1,0 +1,26 @@
+@include media($eui-bkp-mobile) {
+    .eui-card {
+        &--size-xs,
+        &--size-s,
+        &--size-m,
+        &--size-l,
+        &--size-xl,
+        &--size-2xl {
+            .eui-card-container {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+@include media($eui-bkp-tablet) {
+    .eui-card {
+        &--size-xs,
+        &--size-s {
+            .eui-card-container {
+                flex: 0 0 33.33333333%;
+                max-width: 33.33333333%;
+            }
+        }
+    }
+}
