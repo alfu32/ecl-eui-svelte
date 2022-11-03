@@ -22,6 +22,7 @@
     //export let style: T_Nullable<string> = null
     export let colored: T_Nullable<true> = null
     export let fillColor: T_Nullable<string> = null;
+
     $:cssClasses = [
             //super.getCssClasses('eui-icon-svg'),
             'eui-icon',
@@ -35,6 +36,7 @@
         ].join(' ').trim()
 </script>
 <span class={cssClasses}
+on:click
 aria-hidden={ariaHidden}
 aria-labelledby={ariaLabelledby}
 aria-label={ariaLabel}

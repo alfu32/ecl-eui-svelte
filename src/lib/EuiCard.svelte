@@ -1,5 +1,7 @@
 
+<svelte:options accessors/>
 <script lang="ts">
+    import { get_slot_changes } from "svelte/internal";
     import EuiCardHeader from "./EuiCardHeader.svelte";
     import EuiCardMedia from "./EuiCardMedia.svelte";
     import type { T_Nullable } from "./T_NullableProp";
@@ -29,8 +31,27 @@
     ].join(" ")
 </script>
 <div class="{classList}" style="box-sizing:border-box">
-    <slot name="cardHeader"></slot>
-    <slot name="cardMedia"></slot>
+    {#if $$slots.cardHeader}
+        <slot name="cardHeader"></slot>
+    {:else if $$slots.title || $$slots.subtitle || $$slots.leftContent || $$slots.rightContent}
+    <EuiCardHeader isCollapsed={euiCollapsed} isCollapsible={euiCollapsible}>
+        <svelte:fragment slot="title">
+            <slot name="title"></slot>
+        </svelte:fragment>
+        <svelte:fragment slot="subtitle">
+            <slot name="subtitle"></slot>
+        </svelte:fragment>
+        <svelte:fragment slot="leftContent"><slot name="leftContent"></slot></svelte:fragment>
+        <svelte:fragment slot="rightContent"><slot name=rightContent></slot></svelte:fragment>
+    </EuiCardHeader>
+    {/if}
+    <!-- {#if $$slots.cardMedia} -->
+        <slot name="cardMedia"></slot>
+    <!-- {:else}
+        <EuiCardMedia>
+            <slot name="cardMedia"></slot>
+        </EuiCardMedia>
+    {/if}-->
     <div class="eui-card-content">
         <slot></slot>
     </div>

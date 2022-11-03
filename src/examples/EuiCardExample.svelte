@@ -1,8 +1,12 @@
 
 <!-- file: "src/examples/EuiCardExample.svelte" -->
+<style lang="scss">
+    @import '../../node_modules/@eui/styles-base/src/styles/05-assets/flags/module';
+</style>
 <script lang="ts">
     import Example from "../Example.svelte";
     import Code from "../Code.svelte";
+    import EuiChip from "../lib/EuiChip.svelte";
     import EuiCard from "../lib/EuiCard.svelte";
     import EuiCardHeader from "../lib/EuiCardHeader.svelte";
     import EuiLabel from "../lib/EuiLabel.svelte";
@@ -10,23 +14,28 @@
     import EuiIcon from "../lib/EuiIcon.svelte";
     import EuiList from "../lib/EuiList.svelte";
     import EuiListItem from "../lib/EuiListItem.svelte";
+    import SampleComponent from './sample-component.svelte'
+    import { later } from "../string-util";
 
     let cardTitle = "Title goes here";
     let cardSubtitle = "Secondary subtitle text";
     const onMenuItemClicked = (p)=>(e)=>{alert(`menu item ${p} clicked !`)}
     const onCardTitleLinkClicked = (e)=>{alert(`card title clicked !`)}
+
+    let card:EuiCard;
+    let cardCollapsed=false;
+    async function getCardRef(){
+        return await later<EuiCard>(()=>{
+            console.log({card})
+            return card
+        },1000)
+    }
 </script>
 <Example title="EuiCard">
     <h6 class="section-title eui-u-mt-m">Showing card header title, subtitle and card content</h6>
     <EuiCard>
-        <EuiCardHeader slot="cardHeader">
-            <div slot="title">
-                {cardTitle}
-            </div>
-            <div slot="subtitle">
-                {cardSubtitle}
-            </div>
-        </EuiCardHeader>
+        <div slot="title">{cardTitle}</div>
+        <div slot="subtitle">{cardSubtitle}</div>
         <div>
             I am the content of the card container...
         </div>
@@ -37,14 +46,8 @@
     <Code value={`
         <h6 class="section-title eui-u-mt-m">Showing card header title, subtitle and card content</h6>
         <EuiCard>
-            <EuiCardHeader slot="cardHeader">
-                <div slot="title">
-                    {cardTitle}
-                </div>
-                <div slot="subtitle">
-                    {cardSubtitle}
-                </div>
-            </EuiCardHeader>
+            <div slot="title">{cardTitle}</div>
+            <div slot="subtitle">{cardSubtitle}</div>
             <div>
                 I am the content of the card container...
             </div>
@@ -71,7 +74,7 @@
                 <div class="eui-u-flex">
                     Header body...
                     <div class="eui-u-ml-auto">
-                        <eui-chip euiSecondary euiRounded euiOutline euiSizeS><EuiLabel>Dog Breed</EuiLabel></eui-chip>
+                        <EuiChip kind=secondary euiRounded euiOutline euiSizeS><EuiLabel>Dog Breed</EuiLabel></EuiChip>
                     </div>
                 </div>
         </EuiCardHeader>
@@ -124,7 +127,7 @@
                     <div class="eui-u-flex">
                         Header body...
                         <div class="eui-u-ml-auto">
-                            <eui-chip euiSecondary euiRounded euiOutline euiSizeS><EuiLabel>Dog Breed</EuiLabel></eui-chip>
+                            <EuiChip kind=secondary euiRounded euiOutline euiSizeS><EuiLabel>Dog Breed</EuiLabel></EuiChip>
                         </div>
                     </div>
             </EuiCardHeader>
@@ -158,6 +161,93 @@
                     <EuiListItem on:click={onMenuItemClicked(3)}>Menu item 3</EuiListItem>
                 </EuiList>
             </div>
+        </EuiCard>
+    `}></Code>
+    <h6 class="section-title eui-u-mt-m">Using the card header title/subtitle as unique container</h6>
+    <EuiCard>
+        <span slot=title>Title goes here</span>
+        <span slot=subtitle>Secondary subtitle text</span>
+    </EuiCard>
+    <Code value={`
+        <h6 class="section-title eui-u-mt-m">Using the card header title/subtitle as unique container</h6>
+        <EuiCard>
+            <span slot=title>Title goes here</span>
+            <span slot=subtitle>Secondary subtitle text</span>
+        </EuiCard>
+    `}></Code>
+    
+    
+    <h6 class="section-title">Using the card content as unique container</h6>
+    <EuiCard>
+        <div class="eui-u-flex">
+            <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Shiba Inu" class="eui-u-mr-m" style="aspect-ratio: 1; border: 2px solid white; border-radius: 50%; height: 6rem; width: 6rem;">
+            <div class="eui-u-ml-auto">
+                The <strong>Shiba Inu</strong> is a Japanese breed of hunting dog. A small-to-medium breed, it is the smallest of the six original and distinct spitz breeds of dog native to Japan.
+                A small, agile dog that copes very well with mountainous terrain and hiking trails, the <a class="eui-u-text-link-external" href="https://en.wikipedia.org/wiki/Shiba_Inu" target="_blank">Shiba Inu</a> was originally bred for hunting.
+                <br><br>
+                It looks similar to and is often mistaken for other Japanese dog breeds like the Akita Inu or Hokkaido, but the Shiba Inu is a different breed with a distinct blood line, temperament, and smaller size than other Japanese dog breeds.
+            </div>
+        </div>
+    </EuiCard>
+    <Code value={`
+        <h6 class="section-title">Using the card content as unique container</h6>
+        <EuiCard>
+            <div class="eui-u-flex">
+                <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Shiba Inu" class="eui-u-mr-m" style="aspect-ratio: 1; border: 2px solid white; border-radius: 50%; height: 6rem; width: 6rem;">
+                <div class="eui-u-ml-auto">
+                    The <strong>Shiba Inu</strong> is a Japanese breed of hunting dog. A small-to-medium breed, it is the smallest of the six original and distinct spitz breeds of dog native to Japan.
+                    A small, agile dog that copes very well with mountainous terrain and hiking trails, the <a class="eui-u-text-link-external" href="https://en.wikipedia.org/wiki/Shiba_Inu" target="_blank">Shiba Inu</a> was originally bred for hunting.
+                    <br><br>
+                    It looks similar to and is often mistaken for other Japanese dog breeds like the Akita Inu or Hokkaido, but the Shiba Inu is a different breed with a distinct blood line, temperament, and smaller size than other Japanese dog breeds.
+                </div>
+            </div>
+        </EuiCard>
+    `}></Code>
+    <p>By default the <code>OnInit</code> and <code>OnDestroy</code> hooks of the component in the content will be triggered with the ones of the parent page. To prevent this behaviour, a condition can be added on the component, doing that <code>OnInit</code> and <code>OnDestroy</code> will be triggered when the component is displayed and hided.</p>
+    <br/>
+    <EuiCard bind:this={card} euiCollapsible euiCollapsed>
+        <span slot=title>Card title</span>
+        <span slot=subtitle>Card subtitle</span>
+        <span>
+            {#await getCardRef()}
+                <span>no card ref</span>
+            {:then cardref}
+                <pre>{cardref}</pre>
+                {#if !cardref.euiCollapsed}<SampleComponent></SampleComponent>{/if}
+            {:catch error}
+                <pre>ERROR:{error}</pre>
+            {/await}
+        </span>
+    </EuiCard>
+    <Code value={`
+        <script lang="ts">
+            import EuiCard from "../lib/EuiCard.svelte";
+            import SampleComponent from './sample-component.svelte'
+            import { later } from "../string-util";
+            let card:EuiCard;
+            let cardCollapsed=false;
+            async function getCardRef(){
+                return await later<EuiCard>(()=>{
+                    console.log({card})
+                    return card
+                },1000)
+            }
+        </script>
+        <p>By default the <code>OnInit</code> and <code>OnDestroy</code> hooks of the component in the content will be triggered with the ones of the parent page. To prevent this behaviour, a condition can be added on the component, doing that <code>OnInit</code> and <code>OnDestroy</code> will be triggered when the component is displayed and hided.</p>
+        <br/>
+        <EuiCard bind:this={card} euiCollapsible euiCollapsed>
+            <span slot=title>Card title</span>
+            <span slot=subtitle>Card subtitle</span>
+            <span>
+                {#await getCardRef()}
+                    <span>no card ref</span>
+                {:then cardref}
+                    <pre>{cardref}</pre>
+                    {#if !cardref.euiCollapsed}<SampleComponent></SampleComponent>{/if}
+                {:catch error}
+                    <pre>ERROR:{error}</pre>
+                {/await}
+            </span>
         </EuiCard>
     `}></Code>
 </Example>
