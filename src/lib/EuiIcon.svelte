@@ -26,7 +26,7 @@
     $:cssClasses = [
             //super.getCssClasses('eui-icon-svg'),
             'eui-icon',
-            icon && !isLoading ? icon : ``,
+            icon && !isLoading ? `eui-icon--${icon}` : ``,
             icon && isLoading ? `eui-icon--loading` : ``,
             isLoading ? 'eui-u-loading' : '',
             fillColor!==null?`eui-icon-svg--color-${fillColor}`:'',

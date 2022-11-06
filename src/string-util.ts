@@ -1,5 +1,6 @@
 
 import format from 'xml-formatter';
+import type { T_Nullable } from './lib/T_NullableProp';
 
 export function trimIndent(string:string):string{
     let start = /(\n\r|\r\n|\n|\r)+/gi
@@ -201,4 +202,13 @@ export function removeFromCache(selector:string){
         return v;
     }
     return null;
+}
+export function getClassList(classes:{[key:string]:T_Nullable<true>}):string{
+    return Object.keys(classes).reduce( (classList:Array<string>,key:string) => {
+        const val = classes[key];
+        if(!(val??false)){
+            classList=[...classList,key]
+        }
+        return classList
+    },[]).join(" ")
 }

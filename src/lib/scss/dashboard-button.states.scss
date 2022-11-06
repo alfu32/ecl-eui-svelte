@@ -1,0 +1,158 @@
+.eui-button {
+    &--block,
+    &--fluid {
+        display: block;
+        width: 100%;
+    }
+
+    &--flat {
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        color: v(eui-base-color-primary-100);
+
+        &:hover {
+            background-color: #dcdcdc;
+            // border-radius: 2px;
+            box-shadow: none;
+        }
+    }
+
+    &--disabled,
+    &--is-loading,
+    &[disabled],
+    &.disabled {
+        opacity: 0.45;
+        pointer-events: none;
+    }
+}
+
+// SHAPES
+.eui-button--rounded {
+    border-radius: 1rem;
+}
+
+// TYPECLASS
+.eui-button--primary {
+    background-color: v(eui-base-color-primary-100);
+    color: white;
+
+    &:hover {
+        background-color: v(eui-base-color-primary-120);
+        color: white;
+    }
+}
+
+.eui-button--secondary {
+    background-color: v(eui-base-color-grey-50);
+    color: white;
+
+    &:hover {
+        background-color: v(eui-base-color-grey-75);
+        color: white;
+    }
+}
+
+.eui-button--info {
+    background-color: v(eui-base-color-info-100);
+    color: white;
+
+    &:hover {
+        background-color: v(eui-base-color-info-120);
+        color: white;
+    }
+}
+
+.eui-button--success {
+    background-color: v(eui-base-color-success-100);
+    color: white;
+
+    &:hover {
+        background-color: v(eui-base-color-success-120);
+        color: white;
+    }
+}
+
+.eui-button--warning {
+    background-color: v(eui-base-color-warning-100);
+    color: white;
+
+    &:hover {
+        background-color: v(eui-base-color-warning-120);
+        color: white;
+    }
+}
+
+.eui-button--danger {
+    background-color: v(eui-base-color-danger-100);
+    color: white;
+
+    &:hover {
+        background-color: v(eui-base-color-danger-120);
+        color: white;
+    }
+}
+
+// OUTLINE
+
+.eui-button--outline {
+    background-color: white;
+    background-image: none;
+
+    &.eui-button--primary {
+        color: v(eui-base-color-primary-100);
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &.eui-button--secondary {
+        color: v(eui-base-color-grey-50);
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &.eui-button--info {
+        color: v(eui-base-color-info-100);
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &.eui-button--success {
+        color: v(eui-base-color-success-100);
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &.eui-button--warning {
+        color: v(eui-base-color-warning-100);
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &.eui-button--danger {
+        color: v(eui-base-color-danger-100);
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+// SIZES
+.eui-button--size-s {
+    padding: 0.25rem 0.75rem;
+}
+
+.eui-button--size-l {
+    padding: 0.75rem 1.25rem;
+}

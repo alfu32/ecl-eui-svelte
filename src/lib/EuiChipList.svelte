@@ -15,8 +15,8 @@
     <h4>EuiChipList<h4>
     <slot></slot>
 </div>
-<style>
-    .EuiChipList{
-        border:1px solid #ccc;
-    }
+<style lang="scss">
+    @import 'scss/base';
+    @import 'scss/chip-list';
+    @import 'scss/chip-list-mq';
 </style>

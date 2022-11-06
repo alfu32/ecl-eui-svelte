@@ -37,8 +37,8 @@
         `eui-chip--${kind}`,
         isChipRemovable ? `eui-chip--removable` : ``,
         isSquared ? `eui-chip--squared` : ``,
-        ( euiRounded !== null) ? ` eui-button--rounded` : "",
-        ( euiOutline===true  ) ? " eui-button--outline" : "",
+        ( euiRounded !== null) ? ` eui-chip--rounded` : "",
+        ( euiOutline===true  ) ? " eui-chip--outline" : "",
         ( euiSize !== null  ) ? `eui-chip--size-${euiSize}` : "",
         clazz,
     ].join(" ")
@@ -68,18 +68,18 @@
      euiTooltipRounded={data?.tooltip?.rounded} 
      euiTooltipArrows={data?.tooltip?.arrows} 
     -->
-    <div class="eui-chip-wrapper">
-    <div class="eui-chip__content-container" bind:this={chipLabel}>
-         <slot></slot>
+    <div class="eui-chip-wrapper"> 
+        <div class="eui-chip__content-container" bind:this={chipLabel}>
+            <slot></slot>
+        </div>
+        {#if isChipRemovable}
+        <EuiIcon
+            class="eui-chip__remove-icon eui-icon eui-icon-ecl-close-filled"
+            on:keydown={onRemove}
+            on:click={onRemove}>
+        </EuiIcon>
+        {/if}
     </div>
-    {#if isChipRemovable}
-    <EuiIcon
-          class="eui-chip__remove-icon eui-icon eui-icon-ecl-close-filled"
-          on:keydown={onRemove}
-          on:click={onRemove}>
-    </EuiIcon>
-    {/if}
-</div>
 </div>
 <style lang="scss">
     @import 'scss/base';

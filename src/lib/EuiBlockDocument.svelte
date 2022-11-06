@@ -1,22 +1,19 @@
-
-// file: "src/lib/EuiBlockDocument.svelte"
 <script lang="ts">
-    import type { T_EuiBadgeKind } from "./T_EuiBadgeKind";
     import type { T_Nullable } from "./T_NullableProp";
 
-    export let disabled: T_Nullable<true> = null;
     let clazz:  string = "";
     export { clazz as class };
-    export let outline: T_Nullable<true> = null;
-    export let flat: T_Nullable<true> = null;
-    export let kind: T_Nullable<T_EuiBadgeKind> = null;
+    export let isBlocked: T_Nullable<boolean> = false;
+    $:classList=[
+        'eui-block-document',
+        isBlocked ? `eui-block-document--blocked` : "",
+        clazz,
+    ].join(" ")
 </script>
-<div class="EuiBlockDocument {clazz}">
-    <h4>EuiBlockDocument<h4>
-    <slot></slot>
+<div class={classList}>
+    <div class="eui-block-document__loader" aria-label="eUI Block Document"></div>
 </div>
-<style>
-    .EuiBlockDocument{
-        border:1px solid #ccc;
-    }
+<style lang="scss">
+    @import "scss/_base.scss";
+    @import "scss/block-document.scss";
 </style>

@@ -1,0 +1,44 @@
+.eui-datepicker {
+    // Allows to colorize the input background color and be WCAG2 AA compliant
+    &--primary {
+        input {
+            background-color: v(eui-base-color-primary-10);
+        }
+    }
+
+    &--secondary {
+        input {
+            background-color: v(eui-base-color-grey-10);
+        }
+    }
+
+    &--info {
+        input {
+            background-color: v(eui-base-color-info-10);
+        }
+    }
+
+    &--success {
+        input {
+            background-color: v(eui-base-color-success-10);
+        }
+    }
+
+    &--warning {
+        input {
+            background-color: v(eui-base-color-warning-10);
+        }
+    }
+
+    &--danger {
+        input {
+            background-color: v(eui-base-color-danger-10);
+        }
+    }
+
+    &--accent {
+        input {
+            background-color: v(eui-base-color-accent-10);
+        }
+    }
+}

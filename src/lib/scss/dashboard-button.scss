@@ -1,0 +1,146 @@
+.eui-dashboard-button {
+    background-color: v(eui-base-color-grey-10);
+    border: v(eui-base-border);
+    cursor: pointer;
+    float: left;
+    margin-right: v(eui-base-spacing-m);
+    width: 7rem;
+
+    &:hover,
+    &:focus {
+        background-color: v(eui-base-color-grey-10);
+        outline: 0;
+        box-shadow: v(eui-base-shadow-2);
+    }
+
+    &__content-main-label,
+    &__content-main-icon {
+        display: block;
+        font-size: 4rem;
+        height: 100%;
+        padding-top: v(eui-base-spacing-m);
+        text-align: center;
+        width: 100%;
+        box-shadow: v(eui-base-shadow-2);
+    }
+
+    &__content-main-icon-dashboard {
+        background-repeat: no-repeat;
+        display: block;
+        height: 48px;
+        margin: 0 auto;
+        margin-bottom: v(eui-base-spacing-xs);
+        margin-top: 1.25rem;
+        width: 48px;
+    }
+
+    &__content-title {
+        margin: 0;
+        padding-top: 0.75rem;
+        text-align: center;
+    }
+
+    &__content-sub-title {
+        color: v(eui-base-color-grey-75);
+        font-size: v(eui-base-font-size-s);
+        margin-top: v(eui-base-spacing-s);
+        text-align: center;
+    }
+}
+
+.eui-dropdown-button__menu-item {
+    &:focus {
+        color: v(eui-base-color-text);
+    }
+}
+
+.eui-dashboard-button {
+
+    // ROUNDED
+    // -------
+
+    &--rounded {
+        background-color: transparent;
+        border: 0;
+        padding: v(eui-base-spacing-s) 0;
+    }
+
+    &--rounded &__content-main-label,
+    &--rounded &__content-main-icon {
+        background-color: #ececec;
+        border-radius: 100%;
+        color: #333;
+        font-size: 3rem;
+        height: 5rem;
+        margin: 0 auto;
+        padding-top: 0.80rem;
+        width: 5rem;
+    }
+
+    &--rounded &__content-sub-title {
+        color: v(eui-base-color-grey-75);
+        font-size: v(eui-base-font-size-s);
+        margin-top: v(eui-base-spacing-s);
+        text-align: center;
+    }
+
+    // BIG
+    // -------
+
+    &--large {
+        width: 10rem;
+    }
+
+    &--large &__content-main-icon,
+    &--large &__content-main-label {
+        font-size: 4rem;
+        height: 8rem;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        text-align: center;
+        width: 8rem;
+    }
+
+    &--large &__content-title {
+        font-size: v(eui-base-font-size-l);
+    }
+
+    &--large &__contet-sub-title {
+        font-size: v(eui-base-font-size-m);
+    }
+
+    // FULL-WIDTH
+    // ------------
+
+    &--full-width {
+        width: 100%;
+    }
+
+    // COLOR STATES
+    // ------------
+
+    &--primary &__content-main-label,
+    &--primary &__content-main-icon {
+        background-color: v(eui-base-color-primary-100);
+    }
+
+    &--info &__content-main-label,
+    &--info &__content-main-icon {
+        background-color: v(eui-base-color-info-100);
+    }
+
+    &--success &__content-main-label,
+    &--success &__content-main-icon {
+        background-color: v(eui-base-color-success-100);
+    }
+
+    &--warning &__content-main-label,
+    &--warning &__content-main-icon {
+        background-color: v(eui-base-color-warning-100);
+    }
+
+    &--danger &__content-main-label,
+    &--danger &__content-main-icon {
+        background-color: v(eui-base-color-danger-100);
+    }
+}

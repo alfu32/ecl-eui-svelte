@@ -1,0 +1,65 @@
+.eui-datepicker {
+    .eui-datepicker__wrapper {
+        .eui-input-group{
+            margin-bottom: 0;
+        }
+
+        .eui-input-group-addon{
+            width: unset;
+        }
+        input {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            width: calc(8.5 * #{v(eui-base-spacing-m)});
+
+            &.eui-datepicker--long-format {
+                width: calc(12.5 * #{v(eui-base-spacing-m)});
+            }
+
+            &.eui-datepicker--block {
+                width: 100%;
+            }
+
+            &.eui-datepicker--no-button {
+                border-bottom-right-radius: v(eui-base-border-radius);
+                border-top-right-radius: v(eui-base-border-radius);
+            }
+        }
+
+        &--responsive {
+            .eui-input-group-addon{
+                width: 100%;
+            }
+        }
+    }
+    &--container-height-large {
+        height: auto !important; //extends the container to fit timepicker on desktop
+    }
+
+    &__footer {
+        display :flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+// Angular Material overrides
+.mat-calendar {
+    &.mat-calendar-year {
+        .mat-calendar-period-button {
+            display: none;
+        }
+    }
+}
+
+.mat-datepicker-actions {
+    padding: 0 v(eui-base-spacing-xs) v(eui-base-spacing-xs) v(eui-base-spacing-xs) !important; //compact style class alignments
+}
+// removes fixed height to fit timepicker on touchui mode
+.mat-datepicker-dialog .mat-datepicker-content-touch{
+    max-height: none;
+}
+.mat-datepicker-content-touch .mat-datepicker-content-container {
+    height: auto !important;
+    max-height: fit-content !important;
+}

@@ -4,7 +4,7 @@
 
 
     export let title:string=""
-    export let phase:'todo'|'plan'|'work'|'done'|'test'|'ready'='todo';
+    export let phase:'todo'|'plan'|'work'|'done'|'test'|'fix'|'refactor'|'ready'='todo';
     $:iconclass=` ${phase}`;
     //$:childrenCount=Array.prototype.slice.call(children[0].children).map(c => (c.nodeValue||c.tagName))
     export let childrenCount=10
@@ -58,6 +58,14 @@
             }
             &.test::marker{
                 content:'\1f315[test]';
+                color:#292863;
+            }
+            &.fix::marker{
+                content:'\25F3[fix]';
+                color:#292863;
+            }
+            &.refactor::marker{
+                content:'\25F4[refactor]';
                 color:#292863;
             }
             &.ready::marker{

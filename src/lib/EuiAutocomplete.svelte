@@ -5,7 +5,6 @@
 
 
 
-    export let disabled: T_Nullable<true> = null;
     let clazz:  string = "";
     export { clazz as class };
     export let outline: T_Nullable<true> = null;
@@ -15,7 +14,7 @@
     export let hasChips: T_Nullable<true> = null;
     export let matAutocompleteOrigin: string = 'ahem'
 </script>
-<div class="eui-autocomplete__container" data={matAutocompleteOrigin}>
+<div class="eui-autocomplete__container" data={matAutocompleteOrigin} {...$$restProps}>
     <div class="eui-autocomplete__wrapper eui-autocomplete__wrapper--{ chipsPosition }">
         <slot></slot>
         <!--

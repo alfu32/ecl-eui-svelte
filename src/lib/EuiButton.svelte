@@ -25,6 +25,7 @@
     export let euiRounded: T_Nullable<true> = null;
     export let euiSize: T_Nullable<T_EuiSize> = null;
     export let disabled: T_Nullable<true> = null;
+    export let style:T_Nullable<string>=null;
 
     $:classList=[
         "eui-button",
@@ -50,6 +51,7 @@
     aria-disabled={disabled ? "true" : "false"}
     data-e2e="eui-button"
     class={classList}
+    {style}
 >
     {#if isLoading}
     <EuiIcon {isLoading} class="eui-button__loading-icon"></EuiIcon>

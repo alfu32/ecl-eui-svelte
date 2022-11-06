@@ -31,7 +31,7 @@
         isClosed=true;
     }
 </script>
-<div class={classList}>
+<div class={classList} {...$$restProps}>
     {#if !isClosed}
     <div class="eui-alert__content-wrapper">
         <div role="alert">

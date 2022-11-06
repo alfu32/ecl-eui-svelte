@@ -1,8 +1,5 @@
 
 <!-- file: "src/examples/EuiCardExample.svelte" -->
-<style lang="scss">
-    @import '../../node_modules/@eui/styles-base/src/styles/05-assets/flags/module';
-</style>
 <script lang="ts">
     import Example from "../Example.svelte";
     import Code from "../Code.svelte";
@@ -31,7 +28,7 @@
         },1000)
     }
 </script>
-<Example title="EuiCard">
+<Example title="EuiCard" phase="test">
     <h6 class="section-title eui-u-mt-m">Showing card header title, subtitle and card content</h6>
     <EuiCard>
         <div slot="title">{cardTitle}</div>
