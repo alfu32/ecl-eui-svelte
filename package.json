@@ -1,6 +1,5 @@
 {
-  "name": "ecl-eui-svelte",
-  "private": true,
+  "name": "@svelte-eui/ecl-eui-svelte",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -31,5 +30,27 @@
     "brace": "^0.11.1",
     "uuid": "^9.0.0",
     "xml-formatter": "^2.6.1"
-  }
+  },
+  "description": "This template should help get you started developing with Svelte and TypeScript in Vite.",
+  "main": "svelte.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfu32/ecl-eui-svelte.git"
+  },
+  "keywords": [
+    "svelte",
+    "eui",
+    "ecl",
+    "europa",
+    "component",
+    "library",
+    "user",
+    "interface"
+  ],
+  "author": "Ioan ALFERARU",
+  "license": "EUPL-1.2",
+  "bugs": {
+    "url": "https://github.com/alfu32/ecl-eui-svelte/issues"
+  },
+  "homepage": "https://github.com/alfu32/ecl-eui-svelte#readme"
 }
