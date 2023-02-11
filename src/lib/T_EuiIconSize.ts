@@ -1,0 +1,1 @@
+export type T_EuiIconSize=""|"s"|"m"|"l"|"2x"|"3x"|"4x"|"5x"

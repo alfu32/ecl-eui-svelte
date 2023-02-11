@@ -1,0 +1,14 @@
+@include media($eui-bkp-mobile) {
+    .eui-chip-list {
+        .eui-chip-list-container {
+            flex-wrap: wrap;
+        }
+    }
+}
+@include media($eui-bkp-tablet) {
+    .eui-chip-list {
+        .eui-chip-list-container {
+            flex-wrap: wrap;
+        }
+    }
+}

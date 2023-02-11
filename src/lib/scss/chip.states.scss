@@ -1,0 +1,153 @@
+.eui-chip {
+    // TYPECLASSES
+    &--primary:not(.eui-chip--outline) {
+        background-color: v(eui-base-color-primary-100);
+        color: v(eui-base-color-white);  // WCAG2 AA compliant
+
+        .eui-label { color: v(eui-base-color-white); }
+    }
+
+    &--secondary:not(.eui-chip--outline) {
+        background-color: v(eui-base-color-grey-15);
+        color: v(eui-base-color-black);  // WCAG2 AA compliant
+
+        .eui-chip-wrapper .eui-chip__remove-icon {
+            opacity: 0.35;   // DS aligned
+
+            &:hover {
+                opacity: 1;
+            }
+            &:focus {
+                &::before {
+                    outline: 3px solid v(eui-base-color-black);
+                }
+            }
+        }
+
+        .eui-label { color: v(eui-base-color-black); }
+    }
+
+    &--info:not(.eui-chip--outline) {
+        background-color: v(eui-base-color-info-100);
+        color: v(eui-base-color-white);  // WCAG2 AA compliant
+
+        .eui-label { color: v(eui-base-color-white); }
+    }
+
+    &--success:not(.eui-chip--outline) {
+        background-color: v(eui-base-color-success-100);
+        color: v(eui-base-color-white);  // WCAG2 AA compliant
+
+        .eui-label { color: v(eui-base-color-white); }
+    }
+
+    &--warning:not(.eui-chip--outline) {
+        background-color: v(eui-base-color-warning-100);
+        color: v(eui-base-color-black);  // WCAG2 AA compliant - Do not use grey-100 / #404040 not compliant!
+
+        .eui-chip-wrapper .eui-chip__remove-icon {
+            opacity: 0.35;
+
+            &:hover {
+                opacity: 1;
+            }
+            &:focus {
+                &::before {
+                    outline: 3px solid v(eui-base-color-black);
+                }
+            }
+        }
+
+        .eui-label { color: v(eui-base-color-black); }
+    }
+
+    &--danger:not(.eui-chip--outline) {
+        background-color: v(eui-base-color-danger-100);
+        color: v(eui-base-color-white);  // WCAG2 AA compliant
+
+        .eui-label { color: v(eui-base-color-white); }
+    }
+
+    &--accent:not(.eui-chip--outline) {
+        background-color: v(eui-base-color-accent-100);
+        color: v(eui-base-color-black);  // WCAG2 AA compliant
+
+        .eui-chip-wrapper .eui-chip__remove-icon {
+            opacity: 0.35;   // DS aligned
+
+            &:hover {
+                opacity: 1;
+            }
+            &:focus {
+                &::before {
+                    outline: 3px solid v(eui-base-color-black);
+                }
+            }
+        }
+
+        .eui-label { color: v(eui-base-color-black); }
+    }
+
+    // VARIANTS
+    &--squared {
+        border-radius: 0;
+    }
+
+    &--outline {
+        background-color: v(eui-base-color-white);
+        background-image: none;
+        border: 1px solid;
+        border-color: v(eui-base-color-grey-100);
+        color: v(eui-base-color-grey-100);
+
+        .eui-chip-wrapper .eui-chip__remove-icon {
+            opacity: v(eui-base-disabled-opacity);
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        &.eui-chip--primary {
+            border-color: v(eui-base-color-primary-100);
+            .eui-chip__content-container .eui-label { color: v(eui-base-color-primary-100); }
+            .eui-chip__remove-icon { color: v(eui-base-color-primary-100); }
+        }
+
+        &.eui-chip--secondary {
+            border-color: v(eui-base-color-grey-50);
+            .eui-chip__content-container .eui-label { color: v(eui-base-color-grey-100); }
+            .eui-chip__remove-icon { color: v(eui-base-color-grey-100); }
+        }
+
+        &.eui-chip--info {
+            border-color: v(eui-base-color-info-100);
+            .eui-chip__content-container .eui-label { color: v(eui-base-color-info-100); }
+            .eui-chip__remove-icon { color: v(eui-base-color-info-100); }
+        }
+
+        &.eui-chip--success {
+            border-color: v(eui-base-color-success-100);
+            .eui-chip__content-container .eui-label { color: v(eui-base-color-success-100); }
+            .eui-chip__remove-icon { color: v(eui-base-color-success-100); }
+        }
+
+        &.eui-chip--warning {
+            border-color: v(eui-base-color-warning-100);
+            .eui-chip__content-container .eui-label { color: v(eui-base-color-warning-140); }
+            .eui-chip__remove-icon { color: v(eui-base-color-warning-100); }
+        }
+
+        &.eui-chip--danger {
+            border-color: v(eui-base-color-danger-100);
+            .eui-chip__content-container .eui-label { color: v(eui-base-color-danger-100); }
+            .eui-chip__remove-icon { color: v(eui-base-color-danger-100); }
+        }
+
+        &.eui-chip--accent {
+            border-color: v(eui-base-color-accent-100);
+            .eui-chip__content-container .eui-label { color: v(eui-base-color-grey-100); }
+            .eui-chip__remove-icon { color: v(eui-base-color-grey-100); }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+@include media($eui-bkp-mobile) {
+    eui-breadcrumb,
+    .eui-breadcrumb {
+        display: none;
+    }
+}

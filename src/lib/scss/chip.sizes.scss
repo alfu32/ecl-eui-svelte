@@ -1,0 +1,193 @@
+.eui-chip {
+    // Default size M
+    min-height: v(eui-base-spacing-xl);     // DS aligned 32px
+    padding: 0 v(eui-base-spacing-s);       // DS aligned
+
+    .eui-chip-wrapper {
+        .eui-chip__content-container {
+            .eui-label {
+                @include eui-font(m, ui);   // DS aligned
+                padding: v(eui-base-spacing-2xs) 0;
+            }
+        }
+    }
+
+    // With Icon : only allowed before label
+    .eui-chip__content-container {
+        .eui-icon:not(.eui-chip__remove-icon):not(.eui-flag-icon) {
+            margin-left: calc(-1 * #{v(eui-base-spacing-xs)});
+            margin-right: v(eui-base-spacing-xs);
+        }
+
+        eui-icon-svg {
+            margin-left: calc(-1 * #{v(eui-base-spacing-xs)});
+            margin-right: v(eui-base-spacing-xs);
+        }
+
+        .eui-flag-icon {
+            margin-left: calc(-1 * #{v(eui-base-spacing-2xs)});
+            margin-right: v(eui-base-spacing-xs);
+
+            &--rounded {
+                width: calc(1.25 * #{v(eui-base-spacing-m)});
+                height: calc(1.25 * #{v(eui-base-spacing-m)});
+            }
+        }
+    }
+
+    &--size-xs {
+        min-height: calc(#{v(eui-base-spacing-m)} + #{v(eui-base-spacing-2xs)});    // DS aligned 20px
+        padding: 0 v(eui-base-spacing-2xs);                                         // DS aligned
+
+        .eui-chip-wrapper {
+            .eui-chip__content-container {
+                .eui-label {
+                    @include eui-font(xs, ui);   // DS aligned
+                    padding: 0 v(eui-base-spacing-2xs);
+                }
+            }
+        }
+
+        .eui-chip__content-container {
+            .eui-icon:not(.eui-chip__remove-icon):not(.eui-flag-icon) {
+                font-size: v(eui-base-icon-size-xs);
+                margin-left: 0;
+                margin-right: calc(#{v(eui-base-spacing-2xs)} / 2);
+            }
+
+            eui-icon-svg {
+                height: v(eui-base-icon-size-xs);
+                margin-left: 0;
+                margin-right: calc(#{v(eui-base-spacing-2xs)} / 2);
+                width: v(eui-base-icon-size-xs);
+            }
+
+            .eui-flag-icon {
+                height: v(eui-base-spacing-s);
+                margin-left: calc(#{v(eui-base-spacing-2xs)} / 2);
+                margin-right: calc(#{v(eui-base-spacing-2xs)} / 2);
+                width: v(eui-base-icon-size-xs);
+
+                &--rounded {
+                    width: v(eui-base-spacing-s);
+                    height: v(eui-base-spacing-s);
+                }
+            }
+        }
+
+        &.eui-chip--removable {
+            padding-right: v(eui-base-spacing-2xs);
+
+            .eui-chip__remove-icon {
+                font-size: v(eui-base-icon-size-xs);
+                padding-right: 0 !important;
+                padding-left: v(eui-base-spacing-2xs);
+            }
+        }
+    }
+
+    &--size-s {
+        min-height: v(eui-base-spacing-l);          // DS aligned 24px
+        padding: 0 v(eui-base-spacing-xs);          // DS aligned
+
+        .eui-chip-wrapper {
+            .eui-chip__content-container {
+                .eui-label {
+                    @include eui-font(s, ui);       // DS aligned
+                    padding: v(eui-base-spacing-2xs) 0;
+                }
+            }
+        }
+
+        .eui-chip__content-container {
+            .eui-icon:not(.eui-chip__remove-icon):not(.eui-flag-icon) {
+                font-size: v(eui-base-icon-size-s);
+                margin-left: calc(-1 * #{v(eui-base-spacing-2xs)});
+                margin-right: v(eui-base-spacing-2xs);
+            }
+
+            eui-icon-svg {
+                height: v(eui-base-icon-size-s);
+                margin-left: calc(-1 * #{v(eui-base-spacing-2xs)});
+                margin-right: v(eui-base-spacing-2xs);
+                width: v(eui-base-icon-size-s);
+            }
+
+            .eui-flag-icon {
+                height: v(eui-base-spacing-s);
+                margin-left: calc(-0.25 * #{v(eui-base-spacing-2xs)});
+                margin-right: v(eui-base-spacing-xs);
+                width: v(eui-base-icon-size-xs);
+
+                &--rounded {
+                    width: v(eui-base-spacing-m);
+                    height: v(eui-base-spacing-m);
+                }
+            }
+        }
+
+        &.eui-chip--removable {
+            padding-right: v(eui-base-spacing-2xs);
+
+            .eui-chip__remove-icon {
+                font-size: v(eui-base-icon-size-s);
+                padding-right: 0 !important;
+                padding-left: v(eui-base-spacing-xs);
+            }
+        }
+    }
+
+    &--size-l {
+        min-height: v(eui-base-spacing-2xl);    // DS aligned 40px
+
+        .eui-chip-wrapper {
+            .eui-chip__content-container {
+                .eui-label {
+                    @include eui-font(l, ui);   // DS aligned
+                }
+            }
+        }
+
+        .eui-chip__content-container {
+            .eui-icon:not(.eui-chip__remove-icon):not(.eui-flag-icon) {
+                font-size: v(eui-base-icon-size-l);
+                margin-left: calc(-1 * #{v(eui-base-spacing-xs)});
+                margin-right: v(eui-base-spacing-xs);
+            }
+
+            eui-icon-svg {
+                // height: v(eui-base-icon-size-l);
+                margin-left: calc(-1 * #{v(eui-base-spacing-xs)});
+                margin-right: v(eui-base-spacing-xs);
+                // width: v(eui-base-icon-size-l);
+
+                .eui-icon-svg--size-m {
+                    height: v(eui-base-icon-size-l);
+                    width: v(eui-base-icon-size-l);
+                }
+            }
+
+            .eui-flag-icon {
+                height: v(eui-base-icon-size-m);
+                margin-left: calc(-0.25 * #{v(eui-base-spacing-2xs)});
+                margin-right: v(eui-base-spacing-s);
+                width: v(eui-base-icon-size-l);
+
+                &--rounded {
+                    margin-left: calc(-1 * #{v(eui-base-spacing-2xs)});
+                    width: v(eui-base-icon-size-m);
+                }
+            }
+        }
+
+        &.eui-chip--removable {
+            padding-right: v(eui-base-spacing-2xs);
+
+            .eui-chip__remove-icon {
+                font-size: v(eui-base-icon-size-m);
+                padding-right: 0 !important;
+                padding-left: v(eui-base-spacing-xs);
+            }
+        }
+    }
+}

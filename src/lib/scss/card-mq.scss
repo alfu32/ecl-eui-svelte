@@ -1,0 +1,66 @@
+@include media($eui-bkp-mobile) {
+    .eui-card {
+        &-header {
+            &__left-content {
+                button {
+                    flex-wrap: wrap;
+                }
+            }
+
+            &__right-content {
+                flex-wrap: wrap;
+
+                // button,
+                // .eui-button,
+                // .eui-dropdown,
+                // .eui-dropdown-button,
+                // .eui-chip {
+                //     margin: 0 0 v(eui-base-spacing-xs) 0 !important;
+                // }
+
+                // Remove hidden elements
+                *[style*="visibility: hidden"] {
+                    display: none;
+                }
+            }
+
+            &__title-container {
+                &-title {
+                    white-space: normal;
+                }
+
+                &-subtitle {
+                    white-space: normal;
+                }
+            }
+        }
+    }
+}
+@include media($eui-bkp-tablet) {
+    .eui-card {
+        &-header {
+            &__left-content {
+                button {
+                    flex-wrap: wrap;
+                }
+            }
+
+            &__right-content {
+                flex-wrap: wrap;
+
+                // button,
+                // .eui-button,
+                // .eui-dropdown,
+                // .eui-dropdown-button,
+                // .eui-chip {
+                //     margin: 0 0 v(eui-base-spacing-xs) 0 !important;
+                // }
+
+                // Remove hidden elements
+                *[style*="visibility: hidden"] {
+                    display: none;
+                }
+            }
+        }
+    }
+}

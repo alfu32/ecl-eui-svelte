@@ -2,8 +2,9 @@
 <!-- file: "src/examples/EuiIconSvgExample.svelte" -->
 <script lang="ts">
     import type { T_EuiIcon } from "src/lib/T_EuiIcon";
-    import Example from "/src/Example.svelte";
-    import EuiIconSvg from "/src/lib/EuiIconSvg.svelte";
+    import Code from "../Code.svelte";
+    import Example from "../Example.svelte";
+    import EuiIconSvg from "../lib/EuiIconSvg.svelte";
 
     let dynamicIcon:T_EuiIcon="eui-settings"
 </script>
@@ -35,4 +36,15 @@
     <br>
     <button on:click={e => dynamicIcon=(dynamicIcon==="eui-settings")?"eui-close":"eui-settings"}>Update icon</button>
 
+    <Code value={`
+        <EuiChip>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+            iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com
+            modo consequat. Duis aute irure dolor in reprehenderit in voluptate veli
+            t esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat c
+            upidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum."
+        </EuiChip>
+    `}></Code>
 </Example>

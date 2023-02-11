@@ -1,0 +1,145 @@
+.eui-alert {
+    &--hidden {
+        display: none;
+    }
+
+    &--success {
+        border-color: v(eui-base-color-success-50);
+        border-left-color: v(eui-base-color-success-75);
+
+        &::before {
+            content: $eui-icon-check;
+        }
+    }
+
+    &--danger {
+        border-color: v(eui-base-color-danger-50);
+        border-left-color: v(eui-base-color-danger-75);
+
+        &::before {
+            content: $eui-icon-ecl-error;
+        }
+    }
+
+    &--warning {
+        border-color: v(eui-base-color-warning-50);
+        border-left-color: v(eui-base-color-warning-75);
+
+        &::before {
+            content: $eui-icon-exclamation-triangle;
+        }
+    }
+
+    &--secondary {
+        border-color: v(eui-base-color-grey-50);
+        border-left-color: v(eui-base-color-grey-75);
+
+        &::before {
+            content: $eui-icon-question-thin;
+        }
+    }
+
+    &--muted {
+        border-left-width: 1px;
+
+        &::before {
+            display: none;
+        }
+
+        &.eui-alert--secondary {
+            border-left-color: v(eui-base-color-grey-25);
+        }
+
+        &.eui-alert--info {
+            border-left-color: v(eui-base-color-info-25);
+        }
+
+        &.eui-alert--success {
+            border-left-color: v(eui-base-color-success-25);
+        }
+
+        &.eui-alert--warning {
+            border-left-color: v(eui-base-color-warning-25);
+        }
+
+        &.eui-alert--danger {
+            border-left-color: v(eui-base-color-danger-25);
+        }
+    }
+}
+
+
+// TEST with icon-svg css
+
+// .eui-alert {
+//     &--hidden {
+//         display: none;
+//     }
+
+//     &--success {
+//         border-color: v(eui-base-color-success-50);
+//         border-left-color: v(eui-base-color-success-75);
+//         &::before {
+//             @include eui-base-icon-svg-css('checkmark', 'l');
+//             @include eui-base-icon-svg-css-color(white);
+//         }
+//     }
+
+//     &--danger {
+//         border-color: v(eui-base-color-danger-50);
+//         border-left-color: v(eui-base-color-danger-75);
+
+//         &::before {
+//             @include eui-base-icon-svg-css('close-circle', 'l');
+//             @include eui-base-icon-svg-css-color(white);
+//         }
+//     }
+
+//     &--warning {
+//         border-color: v(eui-base-color-warning-50);
+//         border-left-color: v(eui-base-color-warning-75);
+
+//         &::before {
+//             @include eui-base-icon-svg-css('alert-circle', 'l');
+//             @include eui-base-icon-svg-css-color(white);
+//         }
+//     }
+
+//     &--secondary {
+//         border-color: v(eui-base-color-grey-15);
+//         border-left-color: v(eui-base-color-grey-20);
+
+//         &::before {
+//             @include eui-base-icon-svg-css('help', 'l');
+//             @include eui-base-icon-svg-css-color(white);
+//         }
+//     }
+
+//     &--muted {
+//         border-left-width: 1px;
+
+//         &::before {
+//             display: none;
+//         }
+
+//         &.eui-alert--secondary {
+//             border-left-color: v(eui-base-color-grey-25);
+//         }
+
+//         &.eui-alert--info {
+//             border-left-color: v(eui-base-color-info-25);
+//         }
+
+//         &.eui-alert--success {
+//             border-left-color: v(eui-base-color-success-25);
+//         }
+
+//         &.eui-alert--warning {
+//             border-left-color: v(eui-base-color-warning-25);
+//         }
+
+//         &.eui-alert--danger {
+//             border-left-color: v(eui-base-color-danger-25);
+//         }
+//     }
+// }

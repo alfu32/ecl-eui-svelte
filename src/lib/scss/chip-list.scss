@@ -1,0 +1,54 @@
+.eui-chip-list {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    .eui-chip-list-container {
+        align-items: center;
+        display: flex;
+
+        .eui-chip-list-wrapper {
+            @include eui-flex-container;
+            flex-wrap: wrap;
+
+            .eui-chip-list__list {
+                flex-wrap: wrap;
+            }
+
+            .eui-chip-list__chip-container {
+                align-items: center;
+                display: flex;
+
+                .eui-chip {
+                    margin-bottom: v(eui-base-spacing-2xs);
+                    margin-right: v(eui-base-spacing-2xs);
+                }
+            }
+        }
+    }
+
+    &[ischipsdraganddrop] {
+        .eui-chip-list-container {
+            width: 100%;
+        }
+    }
+}
+
+.eui-chip-list__group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eui-chip-list__chip-container {
+    &.cdk-drag:not(.cdk-drag-disabled) {
+        cursor: move !important;
+    }
+}
+
+.eui-chip-list_custom {
+    min-width: auto !important;
+    width: auto !important;
+    margin-bottom: v(eui-base-spacing-2xs);
+    margin-right: v(eui-base-spacing-2xs); 
+}

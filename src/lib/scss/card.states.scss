@@ -1,0 +1,219 @@
+.eui-card {
+    &--selected {
+
+        // Exposed vars
+        --eui-base-font-size: var(--eui-base-font-size-m);           // Default base font size
+        --eui-base-line-height: 1.25;                                // Unitless number value is multiplied by the element's font size
+
+        --eui-card-background-color: var(--eui-base-color-primary-100);
+        --eui-card-font-color: var(--eui-base-color-white);
+
+        // --eui-card-background-color: var(--eui-base-color-white);
+        // --eui-card-font-color: var(--eui-base-color-text);
+        // --eui-card-title-font-size: var(--eui-base-font-size-m);      // Card title font size
+        // --eui-card-subtitle-font-size: var(--eui-base-font-size-s);   // Card subtitle font size
+
+        border: transparent;
+
+        .eui-card-header,
+        .eui-card-header-body {
+            background: var(--eui-card-background-color);
+            border-radius: v(eui-base-border-radius) v(eui-base-border-radius) 0 0;
+            color: var(--eui-card-font-color);
+        }
+
+        .eui-card-header,
+        .eui-card-header-body {
+            .eui-card-header__title-container {
+                &-title {
+                    color: var(--eui-card-font-color);
+
+                    .eui-label {
+                        color: var(--eui-card-font-color);
+                    }
+                }
+
+                &-subtitle {
+                    color: v(eui-base-color-grey-10);
+
+                    .eui-label {
+                        color: v(eui-base-color-grey-10);
+                    }
+                }
+            }
+
+            .eui-button {
+                &.eui-button--primary {
+                    background: inherit;
+                    border-color: v(eui-base-color-white);
+                    color: v(eui-base-color-white);
+
+                    &.eui-button__container {
+                        > * {
+                            color: v(eui-base-color-grey) !important;
+                        }
+                    }
+                }
+
+                &.eui-button--warning {
+                    .eui-button--outline {
+                        color: v(eui-base-font-color);
+                    }
+                }
+
+                &.eui-button--basic {
+                    color: v(eui-base-font-color);
+
+                    &:hover,
+                    &:focus {
+                        background: rgba(255,255,255,0.25);
+                    }
+                }
+            }
+
+            .eui-icon:not(.eui-icon-toggle--checked) {
+                color: v(eui-color-grey-lighter);
+            }
+
+            .eui-label {
+                &.eui-label--secondary {
+                    color: v(eui-base-color-white) !important;
+                }
+            }
+
+            // Links
+            a,
+            a:not([href]):not([tabindex]) {
+                color: var(--eui-card-font-color) !important;
+            }
+
+            .eui-label--secondary {
+                color: v(eui-base-color-grey-15);
+            }
+
+            .mat-card {
+                --eui-base-color-link: var(--eui-card-font-color);
+
+                background: var(--eui-card-background-color);
+                color: var(--eui-card-font-color);
+            }
+
+            input[type="checkbox"].eui-input-checkbox {
+                // The box
+                &::before {
+                    background: var(--eui-card-font-color);
+                    border: 2px solid var(--eui-card-font-color) !important;   // Force white border
+                    box-shadow: none;
+                }
+                &[checked=true] {
+                    // The checkbox
+                    &::after {
+                        background: transparent;
+                        color: var(--eui-card-font-color);
+                        content: $eui-icon-check-m;
+                        font-family: eui-icons, sans-serif;
+                        left: 0.125rem;     // No spacing-3xs token in 13.x
+                        top: 0;
+                    }
+                }
+            }
+        }
+
+        .eui-card-content {
+            background: v(eui-base-color-white);
+            border: 1px solid v(eui-base-color-grey-10);
+            border-radius: 0 0 v(eui-base-border-radius) v(eui-base-border-radius);
+            color: v(eui-base-color-text);
+        }
+
+        .eui-card-footer {
+            background: v(eui-base-color-white);
+            border-radius: 0 0 v(eui-base-border-radius) v(eui-base-border-radius);
+            color: v(eui-base-color-text);
+        }
+    }
+
+    &--urgent {
+        .eui-card-header__urgent-indicator {
+            display: block;
+        }
+    }
+
+    &--disabled,
+    &--is-loading,
+    &[disabled],
+    &.disabled {
+        opacity: 0.45;
+        pointer-events: none;
+    }
+
+    &--collapsible {
+        .eui-card-header__expander {
+            align-items: center;
+            display: inline-flex;
+            margin-left: v(eui-base-spacing-xs);
+            margin-right: calc(-1 * #{v(eui-base-spacing-xs)});
+        }
+    }
+
+    &--collapsed {
+        .eui-card-media,
+        .eui-card-content,
+        .mat-card-image {
+            height: 0 !important;   // should also override any custom inline height
+            padding: 0 v(eui-base-spacing-m);
+        }
+
+        .eui-card-header,
+        .eui-card-header__container {
+            border-bottom: 1px solid transparent;
+        }
+
+        .eui-card-header__expander .eui-button.eui-card-header__expander-icon {
+            transform: rotate(180deg) !important;
+        }
+    }
+
+    &--primary {
+        border-left: 6px solid v(eui-base-color-primary-100);
+    }
+
+    &--secondary {
+        border-left: 6px solid v(eui-base-color-grey-15);
+    }
+
+    &--info {
+        border-left: 6px solid v(eui-base-color-info-100);
+    }
+
+    &--success {
+        border-left: 6px solid v(eui-base-color-success-100);
+    }
+
+    &--warning {
+        border-left: 6px solid v(eui-base-color-warning-100);
+    }
+
+    &--danger {
+        border-left: 6px solid v(eui-base-color-danger-100);
+    }
+
+    &--accent {
+        border-left: 6px solid v(eui-base-color-accent-100);
+    }
+
+    // Editable / highlighted
+    &--highlighted {
+        z-index: v(eui-base-z-index-highlighted);
+    }
+
+    &-container {
+        .eui-card--highlighted & {
+            z-index: v(eui-base-z-index-highlighted);
+        }
+    }
+
+    &--no-border {
+        border: none;
+    }
+}

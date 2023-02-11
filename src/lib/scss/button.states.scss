@@ -1,0 +1,321 @@
+.eui-button {
+    border: 1px solid v(eui-base-color-grey-100);
+
+    &:hover {
+        background-color: v(eui-base-color-grey-5);
+    }
+
+    // DEFAULT
+    &--primary {
+        background-color: v(eui-base-color-primary-100);
+        border-color: v(eui-base-color-primary-120);
+        color: v(eui-base-color-white);
+
+        &:hover {
+            background-color: v(eui-base-color-primary-110);
+        }
+    }
+
+    &--secondary {
+        background-color: v(eui-base-color-grey-15);
+        border-color: v(eui-base-color-grey-50);
+        color: v(eui-base-color-grey-100);
+
+        &:hover {
+            background-color: v(eui-base-color-grey-25);
+        }
+    }
+
+    &--info {
+        background-color: v(eui-base-color-info-100);
+        border-color: v(eui-base-color-info-120);
+        color: v(eui-base-color-white);
+
+        &:hover {
+            background-color: v(eui-base-color-info-110);
+        }
+    }
+
+    &--success {
+        background-color: v(eui-base-color-success-100);
+        border-color: v(eui-base-color-success-120);
+        color: v(eui-base-color-white);
+
+        &:hover {
+            background-color: v(eui-base-color-success-110);
+        }
+    }
+
+    &--warning {
+        background-color: v(eui-base-color-warning-100);
+        border-color: v(eui-base-color-warning-120);
+        color: v(eui-base-color-black);     // WCAG2 AA compliant
+
+        &:hover {
+            background-color: v(eui-base-color-warning-110);
+        }
+    }
+
+    &--danger {
+        background-color: v(eui-base-color-danger-100);
+        border-color: v(eui-base-color-danger-120);
+        color: v(eui-base-color-white);
+
+        &:hover {
+            background-color: v(eui-base-color-danger-110);
+        }
+    }
+
+    &--accent {
+        background-color: v(eui-base-color-accent-100);
+        border-color: v(eui-base-color-accent-120);
+        color: v(eui-base-color-black);     // WCAG2 AA compliant
+
+        &:hover {
+            background-color: v(eui-base-color-accent-110);
+        }
+    }
+
+    // BASIC (Flat buttons)
+    &--basic {
+        background-color: transparent;
+        border: 1px solid transparent;  // Must to keep same height size
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: v(eui-base-color-grey-5);
+        }
+
+        &.eui-button--primary {
+            color: v(eui-base-color-primary-100);
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-primary-10);
+            }
+        }
+
+        &.eui-button--secondary {
+            color: v(eui-base-color-grey-75);
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-grey-10);
+            }
+        }
+
+        &.eui-button--info {
+            color: v(eui-base-color-info-100);
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-info-10);
+            }
+        }
+
+        &.eui-button--success {
+            color: v(eui-base-color-success-100);
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-success-10);
+            }
+        }
+
+        &.eui-button--warning {
+            color: v(eui-base-color-warning-140);   // WCAG2 AA compliant
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-warning-10);
+            }
+        }
+
+        &.eui-button--danger {
+            color: v(eui-base-color-danger-100);
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-danger-10);
+            }
+        }
+
+        // NOT APPLICABLE
+        // &.eui-button--accent {
+        //     color: v(eui-base-color-black);
+
+        //     &:active,
+        //     &:focus,
+        //     &:hover {
+        //         background-color: v(eui-base-color-accent-25);
+        //     }
+        // }
+    }
+
+    // OUTLINE
+    &--outline {
+        background-color: v(eui-base-color-white);  // default bg for all
+
+        &.eui-button--primary {
+            border-color: v(eui-base-color-primary-100);
+            color: v(eui-base-color-primary-100);
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-primary-100);
+                border-color: v(eui-base-color-primary-120);
+                color: v(eui-base-color-white);
+            }
+        }
+
+        &.eui-button--secondary {
+            border-color: v(eui-base-color-grey-50);
+            color: v(eui-base-color-grey-75);
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-grey-25);
+            }
+        }
+
+        &.eui-button--info {
+            border-color: v(eui-base-color-info-100);
+            color: v(eui-base-color-info-100);
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-info-100);
+                border-color: v(eui-base-color-info-120);
+                color: v(eui-base-color-white);
+            }
+        }
+
+        &.eui-button--success {
+            border-color: v(eui-base-color-success-100);
+            color: v(eui-base-color-success-100);
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-success-100);
+                border-color: v(eui-base-color-success-120);
+                color: v(eui-base-color-white);
+            }
+        }
+
+        &.eui-button--warning {
+            border-color: v(eui-base-color-warning-100);
+            color: v(eui-base-color-warning-140);   // WCAG2 AA compliant
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-warning-100);
+                border-color: v(eui-base-color-warning-120);
+                color: v(eui-base-color-black);
+            }
+        }
+
+        &.eui-button--danger {
+            border-color: v(eui-base-color-danger-100);
+            color: v(eui-base-color-danger-100);
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-danger-100);
+                border-color: v(eui-base-color-danger-120);
+                color: v(eui-base-color-white);
+            }
+        }
+
+        &.eui-button--accent {
+            border-color: v(eui-base-color-accent-120);
+            color: v(eui-base-color-black);
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: v(eui-base-color-accent-100);
+                border-color: v(eui-base-color-accent-120);
+                color: v(eui-base-color-black);
+            }
+        }
+    }
+
+    // FAB (Floating Action Buttton)
+    &--rounded {
+        border-radius: 50%;
+
+        &:active,
+        &:focus {
+            border-radius: 50%;
+            @include eui-accessible-focus();
+        }
+    }
+
+    // RESPONSIVE button will take full width of the parent container
+    &--responsive {
+        position: relative;
+        width: 100%;
+
+        .eui-button__container {
+            overflow: hidden;
+
+            > * {
+                @include eui-ellipsis;
+            }
+
+            .eui-icon {
+                overflow: visible;
+            }
+        }
+    }
+
+    // MISC
+    &--block {
+        display: block;
+        width: 100%;
+    }
+
+    &--line-wrap {
+        line-height: v(eui-base-line-height);
+        padding: v(eui-base-spacing-s);
+        white-space: normal;
+    }
+
+    &--expand-toggle {
+        background: v(eui-base-color-white);
+        border-color: transparent;
+        border-radius: 0 0 v(eui-base-spacing-xs) v(eui-base-spacing-xs);
+        min-height: v(eui-base-spacing-m);
+        padding: 0 v(eui-base-spacing-xl);
+        box-shadow: v(eui-base-shadow-1);
+
+        &:hover,
+        &:focus {
+            box-shadow: v(eui-base-shadow-3);
+        }
+
+        .eui-icon {
+            color: v(eui-base-color-grey-80);
+            font-size: v(eui-base-font-size-l);
+        }
+    }
+
+    &.disabled,
+    &:disabled {
+        pointer-events: none;
+        @include eui-disabled;
+    }
+}

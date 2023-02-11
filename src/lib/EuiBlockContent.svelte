@@ -1,50 +1,26 @@
 <script lang="ts">
-    export let isBlocked: boolean = false;
+    import type { T_Nullable } from "./T_NullableProp";
+
+
+    let clazz:  string = "";
+    export { clazz as class };
+    export let isBlocked: T_Nullable<boolean> = false;
+    $:classList=[
+        'eui-block-content',
+        isBlocked ? `eui-block-content--blocked` : "",
+        clazz,
+    ].join(" ")
 </script>
 
-<div>
-</div>
-<eui-block-content
-    aria-disabled="false"
-    class="eui-block-content{isBlocked?" eui-block-content--blocked":""}"
-    ><div
-        aria-label="eUI Block Content wrapper"
-        role="region"
-        class="eui-block-content__wrapper"
+<div aria-disabled="false" {...$$restProps}
+    class={classList}
     >
-    <slot />
-    </div></eui-block-content
->
+    <div class="eui-block-content__wrapper" aria-label="eUI Block Content wrapper" role="region">
+        <slot />
+    </div>
+</div>
 
-<style>
-    .eui-block-content--blocked .eui-block-content__wrapper {
-        min-height: 100px;
-        position: relative;
-        z-index: var(--eui-base-z-index-overlay);
-    }
-    .eui-block-content--blocked .eui-block-content__wrapper:before {
-        animation: spin .8s linear infinite;
-        border: 8px solid transparent;
-        border-radius: 50%;
-        border-top-color: var(--eui-base-color-primary-100);
-        content: "";
-        display: block;
-        height: 80px;
-        left: 50%;
-        margin: -40px 0 0 -40px;
-        position: absolute;
-        top: 50%;
-        width: 80px;
-        z-index: 10002;
-    }
-    .eui-block-content--blocked .eui-block-content__wrapper:after {
-        background-color: #fff6;
-        content: "";
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10001;
-    }
+<style lang="scss">
+    @import 'scss/base';
+    @import 'scss/block-content';
 </style>

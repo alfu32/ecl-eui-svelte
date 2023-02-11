@@ -1,61 +1,77 @@
 <script lang="ts">
-    import type { T_NullableProp } from "./lib/T_NullableProp";
+    /*import "brace/mode/html";
+    import "brace/theme/monokai";*/
 
 
     export let title:string=""
-    export let phase:'todo'|'plan'|'work'|'done'|'test'|'ready'='todo';
+    export let phase:'todo'|'plan'|'work'|'done'|'test'|'fix'|'refactor'|'ready'='todo';
     $:iconclass=` ${phase}`;
+    //$:childrenCount=Array.prototype.slice.call(children[0].children).map(c => (c.nodeValue||c.tagName))
+    export let childrenCount=10
+    let slotElement:HTMLDivElement;
 </script>
 
 <details title={title}>
     <summary class="{iconclass}">
-        <strong>{title}</strong>
+        <strong>{title}</strong>[{childrenCount}]
     </summary>
+    
     <hr/>
-    <div>
-        <slot></slot>
-    </div>
+        <div bind:this={slotElement}>
+            <slot></slot>
+        </div>
 </details>
-<style>
+<style lang="scss">
     details{
         border:1px solid #3330;
-    }
-    details:hover{
-        border:1px solid #333;
-    }
-    summary{
-        cursor:pointer;
-    }
-    summary::marker{
-        font-family: 'Courier New', Courier, monospace;
-    }
-    summary.todo::marker{
-        content:'\1f311[todo]';
-        color:#263488;
-    }
-    summary.plan::marker{
-        content:'\1f312[plan]';
-        color:#263488;
-    }
-    summary.work::marker{
-        content:'\1f313[work]';
+        padding-left:24px;
+        padding-right:16px;
+        padding-bottom:5px;
+        padding-top:5px;
+        box-sizing: border-box;
+        &:hover{
+            border:1px solid #333;
+        }
+        summary{
+            cursor:pointer;
+            &::marker{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 1.2em;
+                border:1px solid #3330;
+            }
+            &.todo::marker{
+                content:'\1f311[todo]';
+                color:#263488;
+            }
+            &.plan::marker{
+                content:'\1f312[plan]';
+                color:#263488;
+            }
+            &.work::marker{
+                content:'\1f313[work]';
 
-        color:#922706;
-    }
-    summary.done::marker{
-        content:'\1f314[done]';
-        color:#2d6328;
-    }
-    summary.test::marker{
-        content:'\1f315[test]';
-        color:#292863;
-    }
-    summary.ready::marker{
-        content:'\1f31f[ready]';
-        color:#292863;
-    }
-    summary::marker{
-        font-size: 1.2em;
-        border:1px solid #3330;
+                color:#922706;
+            }
+            &.done::marker{
+                content:'\1f314[done]';
+                color:#2d6328;
+            }
+            &.test::marker{
+                content:'\1f315[test]';
+                color:#292863;
+            }
+            &.fix::marker{
+                content:'\25F3[fix]';
+                color:#292863;
+            }
+            &.refactor::marker{
+                content:'\25F4[refactor]';
+                color:#292863;
+            }
+            &.ready::marker{
+                content:'\1f31f[ready]';
+                color:#292863;
+            }
+        }
     }
 </style>

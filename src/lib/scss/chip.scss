@@ -1,0 +1,59 @@
+.eui-chip {
+    align-items: center;
+    border-radius: v(eui-base-spacing-l);   // DS aligned
+    display: inline-flex;   // Must
+    position: relative;
+    transition: v(eui-base-animation-transition-base);
+    font-size: 14px;
+    font-weight: 500;
+
+    .eui-chip-wrapper {
+        align-items: center;
+        display: flex;
+
+        // LABEL
+        .eui-chip__content-container {
+            align-items: center;
+            display: flex;
+
+            .eui-label {
+                @include eui-font(s, ui);   // DS aligned
+                padding: v(eui-base-spacing-xs) 0;
+                white-space: inherit;
+            }
+
+            // For extra spans that may be used through custom content
+            > * {
+                align-items: center;
+                display: flex;
+            }
+        }
+    }
+
+    &.eui-chip--removable {
+        padding-right: v(eui-base-spacing-xs);          // DS aligned
+
+        .eui-chip__remove-icon {
+            cursor: pointer;
+            font-size: v(eui-base-icon-size-s);         // DS aligned 20px height
+            opacity: 0.75;                              // DS aligned
+            padding-left: v(eui-base-spacing-xs);       // DS aligned
+
+            &:hover {
+                opacity: 1;
+            }
+            &:focus {
+                &::before {
+                    outline: 3px solid v(eui-base-color-white);
+                    border-radius: 50%;
+                    outline-offset: -3px;
+                }
+            }
+        }
+    }
+
+    // COMPOSITIONS
+    .eui-tab-item & {
+        margin-left: v(eui-base-spacing-s);
+    }
+}

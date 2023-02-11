@@ -1,0 +1,42 @@
+.eui-badge {
+    // SHAPES
+    &--rounded {
+        border-radius: v(eui-base-spacing-m);
+    }
+
+    // TYPECLASS
+    &--primary {
+        background-color: v(eui-base-color-primary-100);
+        color: v(eui-base-color-white);
+    }
+
+    &--secondary {
+        background-color: v(eui-base-color-grey-75);    // WCAG2 AA compliant
+        color: v(eui-base-color-white);
+    }
+
+    &--info {
+        background-color: v(eui-base-color-info-100);
+        color: v(eui-base-color-white);
+    }
+
+    &--success {
+        background-color: v(eui-base-color-success-100);
+        color: v(eui-base-color-white);
+    }
+
+    &--warning {
+        background-color: v(eui-base-color-warning-100);
+        color: v(eui-base-color-black);
+    }
+
+    &--danger {
+        background-color: v(eui-base-color-danger-100);
+        color: v(eui-base-color-white);
+    }
+
+    &--accent {
+        background-color: v(eui-base-color-accent-100);
+        color: v(eui-base-color-black);
+    }
+}

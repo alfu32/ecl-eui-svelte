@@ -1,11 +1,15 @@
 <script lang="ts">
   import { onMount, afterUpdate } from "svelte"
+
+
+  let clazz:  string = "";
+  export { clazz as class };
   let self=this;
   onMount(()=>{
     console.log({mount:"EuiButtonGroup",$$props,$$slots})
   })
 </script>
-<div class="EuiButtonGroup">
+<div class="EuiButtonGroup {clazz}">
         <slot name="first"></slot>
         <slot></slot>
 </div>

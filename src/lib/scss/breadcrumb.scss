@@ -1,0 +1,14 @@
+.eui-breadcrumb {
+    @include eui-flex-container;
+    position: relative;
+
+    &__items {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: nowrap;
+        list-style: none;
+        margin: 0;
+        padding: v(eui-base-spacing-xs) v(eui-base-spacing-m);     // DS aligned
+    }
+}

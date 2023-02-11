@@ -1,0 +1,106 @@
+.eui-autocomplete {
+    // Allows to colorize the input background color and be WCAG2 AA compliant
+    &--primary {
+        input {
+            background-color: v(eui-base-color-primary-10);
+        }
+    }
+
+    &--secondary {
+        input {
+            background-color: v(eui-base-color-grey-10);
+        }
+    }
+
+    &--info {
+        input {
+            background-color: v(eui-base-color-info-10);
+        }
+    }
+
+    &--success {
+        input {
+            background-color: v(eui-base-color-success-10);
+        }
+    }
+
+    &--warning {
+        input {
+            background-color: v(eui-base-color-warning-10);
+        }
+    }
+
+    &--danger {
+        input {
+            background-color: v(eui-base-color-danger-10);
+        }
+    }
+
+    &--accent {
+        input {
+            background-color: v(eui-base-color-accent-10);
+        }
+    }
+}
+
+.eui-autocomplete__wrapper {
+    &--bottom {
+        .eui-autocomplete__field-wrapper {
+            display: block;
+            margin-bottom: v(eui-base-spacing-2xs);
+        }
+    }
+
+    &--inside {
+        background-color: v(eui-base-color-white);
+        border: 1px solid v(eui-base-color-grey-50);
+        border-radius: v(eui-base-border-radius);
+        padding: v(eui-base-spacing-2xs) v(eui-base-spacing-2xs) 0 v(eui-base-spacing-2xs);
+
+        .mat-chip-list .mat-chip-list-wrapper,
+        .mat-chip-list .mat-standard-chip {
+            align-items: center;
+            margin-bottom: 0;
+        }
+
+        .mat-autocomplete-trigger {
+            background: none;
+            border: 0;
+
+            &:focus {
+                border: 0;
+                box-shadow: v(eui-base-shadow-0);
+            }
+        }
+    }
+}
+
+.eui-autocomplete__option {
+    &--primary {
+        border-left-color: v(eui-base-color-primary-100);
+    }
+
+    &--secondary {
+        border-left-color: v(eui-base-color-grey-25);
+    }
+
+    &--info {
+        border-left-color: v(eui-base-color-info-100);
+    }
+
+    &--success {
+        border-left-color: v(eui-base-color-success-100);
+    }
+
+    &--warning {
+        border-left-color: v(eui-base-color-warning-100);
+    }
+
+    &--danger {
+        border-left-color: v(eui-base-color-danger-100);
+    }
+
+    &--accent {
+        border-left-color: v(eui-base-color-accent-100);
+    }
+}
